@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TTCommons-Bold.ttf">
+            <string>TTCommons-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuCell" id="KGk-i7-Jjw" customClass="MenuCell" customModule="Masari" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YE-Ro-oDS">
+                        <rect key="frame" x="0.0" y="5" width="320" height="40"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LV3-ks-SgA">
+                                <rect key="frame" x="15" y="5" width="30" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="UHN-dR-1Fw">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Wm-DN-LgJ"/>
+                                    <constraint firstItem="UHN-dR-1Fw" firstAttribute="top" secondItem="LV3-ks-SgA" secondAttribute="top" id="BIl-Gn-vrH"/>
+                                    <constraint firstItem="UHN-dR-1Fw" firstAttribute="leading" secondItem="LV3-ks-SgA" secondAttribute="leading" id="SFX-E3-wqG"/>
+                                    <constraint firstAttribute="bottom" secondItem="UHN-dR-1Fw" secondAttribute="bottom" id="mIZ-f2-i5a"/>
+                                    <constraint firstAttribute="trailing" secondItem="UHN-dR-1Fw" secondAttribute="trailing" id="pns-Y7-oWT"/>
+                                    <constraint firstAttribute="width" constant="30" id="qdo-eI-8x7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buffalo Sabres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLx-V5-QbV">
+                                <rect key="frame" x="55" y="11.5" width="103" height="17"/>
+                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iLx-V5-QbV" firstAttribute="leading" secondItem="LV3-ks-SgA" secondAttribute="trailing" constant="10" id="8q5-6f-oP5"/>
+                            <constraint firstItem="LV3-ks-SgA" firstAttribute="centerY" secondItem="9YE-Ro-oDS" secondAttribute="centerY" id="cJK-wO-PkG"/>
+                            <constraint firstItem="LV3-ks-SgA" firstAttribute="leading" secondItem="9YE-Ro-oDS" secondAttribute="leading" constant="15" id="mIO-n1-p5h"/>
+                            <constraint firstItem="iLx-V5-QbV" firstAttribute="centerY" secondItem="LV3-ks-SgA" secondAttribute="centerY" id="vv6-ve-9qx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9YE-Ro-oDS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Zx-JX-lI9"/>
+                    <constraint firstAttribute="bottom" secondItem="9YE-Ro-oDS" secondAttribute="bottom" constant="5" id="hfd-wd-8p5"/>
+                    <constraint firstAttribute="trailing" secondItem="9YE-Ro-oDS" secondAttribute="trailing" id="nS9-uL-Ds2"/>
+                    <constraint firstItem="9YE-Ro-oDS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="v0J-dR-OHP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="menuImgView" destination="UHN-dR-1Fw" id="JwU-E4-8CV"/>
+                <outlet property="menuLblText" destination="iLx-V5-QbV" id="Dgr-1G-DbF"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bet_icon" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

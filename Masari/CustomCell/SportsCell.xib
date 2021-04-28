@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TTCommons-Medium.ttf">
+            <string>TTCommons-Medium</string>
+        </array>
+        <array key="TTCommons-Regular.ttf">
+            <string>TTCommons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SportsCell" id="KGk-i7-Jjw" customClass="SportsCell" customModule="Masari" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkL-nB-HWK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obi-Oy-d66">
+                        <rect key="frame" x="15" y="7.5" width="45" height="45"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football_icon" translatesAutoresizingMaskIntoConstraints="NO" id="g0a-Di-bSJ">
+                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g0a-Di-bSJ" secondAttribute="trailing" id="7JA-Ny-1po"/>
+                            <constraint firstItem="g0a-Di-bSJ" firstAttribute="top" secondItem="Obi-Oy-d66" secondAttribute="top" id="BHt-Qk-y62"/>
+                            <constraint firstItem="g0a-Di-bSJ" firstAttribute="leading" secondItem="Obi-Oy-d66" secondAttribute="leading" id="dvQ-aK-3Xe"/>
+                            <constraint firstAttribute="width" constant="45" id="kqt-g2-mkG"/>
+                            <constraint firstAttribute="bottom" secondItem="g0a-Di-bSJ" secondAttribute="bottom" id="o3I-nR-lz1"/>
+                            <constraint firstAttribute="height" constant="45" id="ucr-MG-lcD"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mAe-L2-OF5">
+                        <rect key="frame" x="70" y="23" width="45.5" height="14"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj2-9t-xw1">
+                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="14"/>
+                                <fontDescription key="fontDescription" name="TTCommons-Medium" family="TT Commons" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 bets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmI-uW-G91">
+                                <rect key="frame" x="0.0" y="14" width="45.5" height="0.0"/>
+                                <fontDescription key="fontDescription" name="TTCommons-Regular" family="TT Commons" pointSize="11"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hkL-nB-HWK" secondAttribute="bottom" id="41o-FA-HdY"/>
+                    <constraint firstItem="hkL-nB-HWK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PtS-3W-X5i"/>
+                    <constraint firstItem="hkL-nB-HWK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="T6N-Ge-Uvg"/>
+                    <constraint firstAttribute="trailing" secondItem="hkL-nB-HWK" secondAttribute="trailing" id="Xrb-TI-MJO"/>
+                    <constraint firstItem="Obi-Oy-d66" firstAttribute="centerY" secondItem="hkL-nB-HWK" secondAttribute="centerY" id="b9g-60-qTL"/>
+                    <constraint firstItem="mAe-L2-OF5" firstAttribute="centerY" secondItem="g0a-Di-bSJ" secondAttribute="centerY" id="bWm-5g-qXd"/>
+                    <constraint firstItem="Obi-Oy-d66" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="dxp-rW-3dE"/>
+                    <constraint firstItem="mAe-L2-OF5" firstAttribute="leading" secondItem="Obi-Oy-d66" secondAttribute="trailing" constant="10" id="liK-Ip-isN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblMatchName" destination="Qj2-9t-xw1" id="6De-wr-u4E"/>
+                <outlet property="matchImgView" destination="g0a-Di-bSJ" id="iZ8-vO-OuR"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="78.348214285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="football_icon" width="42" height="42"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
