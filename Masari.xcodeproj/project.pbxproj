@@ -68,6 +68,9 @@
 		FABACAA8263010BD0081B37C /* SportsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABACAA6263010BD0081B37C /* SportsManager.swift */; };
 		FABACAA9263010BD0081B37C /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABACAA7263010BD0081B37C /* APIHelper.swift */; };
 		FABACAB6263016470081B37C /* LiveMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABACAB5263016470081B37C /* LiveMatchModel.swift */; };
+		FADEB0A1263A8B9D00F4D99B /* LiveMatchDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEB0A0263A8B9D00F4D99B /* LiveMatchDetailModel.swift */; };
+		FADEB0A4263AB99000F4D99B /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEB0A3263AB99000F4D99B /* PlayerDetailViewController.swift */; };
+		FADEB0B2263AD5B600F4D99B /* BaseBallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEB0B1263AD5B600F4D99B /* BaseBallModel.swift */; };
 		FAFD33522639503D000AFC1E /* LiveMatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD33512639503D000AFC1E /* LiveMatchDetailViewController.swift */; };
 		FAFF64E126136B22002A7B0B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF64E026136B22002A7B0B /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -138,6 +141,9 @@
 		FABACAA6263010BD0081B37C /* SportsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsManager.swift; sourceTree = "<group>"; };
 		FABACAA7263010BD0081B37C /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		FABACAB5263016470081B37C /* LiveMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchModel.swift; sourceTree = "<group>"; };
+		FADEB0A0263A8B9D00F4D99B /* LiveMatchDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchDetailModel.swift; sourceTree = "<group>"; };
+		FADEB0A3263AB99000F4D99B /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		FADEB0B1263AD5B600F4D99B /* BaseBallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBallModel.swift; sourceTree = "<group>"; };
 		FAFD33512639503D000AFC1E /* LiveMatchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchDetailViewController.swift; sourceTree = "<group>"; };
 		FAFF64E026136B22002A7B0B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +197,8 @@
 			children = (
 				FABACAB5263016470081B37C /* LiveMatchModel.swift */,
 				FAB723032631723300D28D32 /* LeaguesModel.swift */,
+				FADEB0A0263A8B9D00F4D99B /* LiveMatchDetailModel.swift */,
+				FADEB0B1263AD5B600F4D99B /* BaseBallModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -416,21 +424,86 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		FAFF64DF26136AF8002A7B0B /* MainVCs */ = {
+		FADEB0A6263ACD8F00F4D99B /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				FAFF64E026136B22002A7B0B /* HomeViewController.swift */,
+				FADEB0A7263ACD9C00F4D99B /* Sports */,
+				FADEB0A8263ACDC900F4D99B /* Casion */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FADEB0A7263ACD9C00F4D99B /* Sports */ = {
+			isa = PBXGroup;
+			children = (
 				1813D56E2614A0FF004356A4 /* SportsViewController.swift */,
-				1813D57B2614A88D004356A4 /* CasinoViewController.swift */,
 				1813D57E2614A9EF004356A4 /* SportDetailViewController.swift */,
+				FADEB0AB263ACE3800F4D99B /* Upcoming */,
+				FADEB0AC263ACE4600F4D99B /* Live */,
+				FADEB0AD263ACE6200F4D99B /* leagues */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		FADEB0A8263ACDC900F4D99B /* Casion */ = {
+			isa = PBXGroup;
+			children = (
+				1813D57B2614A88D004356A4 /* CasinoViewController.swift */,
+			);
+			path = Casion;
+			sourceTree = "<group>";
+		};
+		FADEB0A9263ACDE500F4D99B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
 				1813D5812614B11C004356A4 /* MenuViewController.swift */,
 				1813D5892614CF2F004356A4 /* ProfileViewController.swift */,
 				1813D58C2614D029004356A4 /* TransactionsViewController.swift */,
 				1813D58F2614D063004356A4 /* SettingsViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FADEB0AB263ACE3800F4D99B /* Upcoming */ = {
+			isa = PBXGroup;
+			children = (
 				FA4DA39E2615AFA900EA09F9 /* UpcomingViewController.swift */,
+			);
+			path = Upcoming;
+			sourceTree = "<group>";
+		};
+		FADEB0AC263ACE4600F4D99B /* Live */ = {
+			isa = PBXGroup;
+			children = (
 				FA4DA3A12615AFDC00EA09F9 /* LiveViewController.swift */,
+				FADEB0AE263ACE8500F4D99B /* Detail */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		FADEB0AD263ACE6200F4D99B /* leagues */ = {
+			isa = PBXGroup;
+			children = (
 				FAB7230026316B3500D28D32 /* LeaguesViewController.swift */,
+			);
+			path = leagues;
+			sourceTree = "<group>";
+		};
+		FADEB0AE263ACE8500F4D99B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB0A3263AB99000F4D99B /* PlayerDetailViewController.swift */,
 				FAFD33512639503D000AFC1E /* LiveMatchDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FAFF64DF26136AF8002A7B0B /* MainVCs */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB0A6263ACD8F00F4D99B /* Home */,
+				FADEB0A9263ACDE500F4D99B /* Menu */,
 			);
 			path = MainVCs;
 			sourceTree = "<group>";
@@ -578,6 +651,7 @@
 				1813D5732614A282004356A4 /* SportsCell.swift in Sources */,
 				FA3C252326130C7500718409 /* Alert.swift in Sources */,
 				FA4DA3A22615AFDC00EA09F9 /* LiveViewController.swift in Sources */,
+				FADEB0A4263AB99000F4D99B /* PlayerDetailViewController.swift in Sources */,
 				FA3C251526130B2300718409 /* Extension.swift in Sources */,
 				FA4DA39F2615AFA900EA09F9 /* UpcomingViewController.swift in Sources */,
 				FA3C252A26130E2600718409 /* UIView.swift in Sources */,
@@ -587,6 +661,7 @@
 				FAB723042631723300D28D32 /* LeaguesModel.swift in Sources */,
 				1813D56A26149B3E004356A4 /* BetsCell.swift in Sources */,
 				1813D5862614B21B004356A4 /* MenuCell.swift in Sources */,
+				FADEB0B2263AD5B600F4D99B /* BaseBallModel.swift in Sources */,
 				FA3C251D26130C5D00718409 /* Rechability.swift in Sources */,
 				FA3C253A26130F6800718409 /* UtilityManager.swift in Sources */,
 				FAB7230126316B3500D28D32 /* LeaguesViewController.swift in Sources */,
@@ -603,6 +678,7 @@
 				FA3C258726134E3C00718409 /* SignupViewController.swift in Sources */,
 				1813D58D2614D029004356A4 /* TransactionsViewController.swift in Sources */,
 				1813D56F2614A0FF004356A4 /* SportsViewController.swift in Sources */,
+				FADEB0A1263A8B9D00F4D99B /* LiveMatchDetailModel.swift in Sources */,
 				1813D57F2614A9EF004356A4 /* SportDetailViewController.swift in Sources */,
 				1813D57C2614A88D004356A4 /* CasinoViewController.swift in Sources */,
 				1813D5902614D063004356A4 /* SettingsViewController.swift in Sources */,

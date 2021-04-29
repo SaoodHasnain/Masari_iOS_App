@@ -22,6 +22,7 @@ class LiveMatchDetailViewController: UIViewController {
     @IBOutlet weak var betNowView: UIView!
     @IBOutlet weak var betNowHeight: NSLayoutConstraint!
     @IBOutlet weak var lblScore: UILabel!
+    @IBOutlet weak var BetTableView: UITableView!
     
     var selectedMatch: Response?
     
@@ -30,7 +31,7 @@ class LiveMatchDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ConfigureCell(tableView: BetTableView, collectionView: nil, nibName: "BetsCell", reuseIdentifier: "BetsCell", cellType: .tblView)
         setMatchDetail()
     }
     
@@ -53,12 +54,38 @@ class LiveMatchDetailViewController: UIViewController {
         }
     }
     
+
     
     //MARK:- Actions
-    
     
     @IBAction func btnBackTapped(_ sender: Any){
         self.popViewController()
     }
     
+    @IBAction func btnBetNowTapped(_ sender: Any){
+        let controller: PlayerDetailViewController = PlayerDetailViewController.initiateFrom(Storybaord: .Main)
+        controller.selectedMatch = selectedMatch
+        self.pushController(contorller: controller, animated: true)
+    }
+}
+
+extension LiveMatchDetailViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BetsCell", for: indexPath) as! BetsCell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
 }

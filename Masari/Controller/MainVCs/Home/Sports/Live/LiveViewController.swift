@@ -15,13 +15,14 @@ class LiveViewController: UIViewController {
     
     @IBOutlet weak var sportTableView: UITableView!
     @IBOutlet weak var noDataSatck: UIStackView!
+    
+    var sportType : String?
     var liveMatch: FootballModel?
     
     //MARK:- Controller Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         ConfigureCell(tableView: sportTableView, collectionView: nil, nibName: "FootballCell", reuseIdentifier: "FootballCell", cellType: .tblView)
         
         
@@ -29,7 +30,9 @@ class LiveViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        getFootBallLiveMAtch()
+        if sportType == "NFL-Football"{
+            getFootBallLiveMAtch()
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {

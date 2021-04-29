@@ -12,9 +12,7 @@ class SportsViewController: UIViewController {
     // MARK:- Properties
     
     @IBOutlet weak var sportTableView: UITableView!
-    
-    let sportArray = [["name": "NBA-Basketball", "image": UIImage(named: "icon_basketball")!],["name": "MLB-Baseball", "image": UIImage(named: "icon_baseball")!],["name": "NFL-Football", "image": UIImage(named: "icon_football")!],["name": "FIFA-Soccer", "image": UIImage(named: "icon_football")!],["name": "NHL-Ice Hockey", "image": UIImage(named: "icon_hockey")!]]
-    
+        
     
     //MARK:- Controller Life Cycle
     
@@ -53,10 +51,8 @@ extension SportsViewController: UITableViewDelegate, UITableViewDataSource {
         return 70
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 2 {
         let controller: SportDetailViewController = SportDetailViewController.initiateFrom(Storybaord: .Main)
         controller.sportTitle = sportArray[indexPath.row]["name"] as? String
         self.pushController(contorller: controller, animated: true)
-        }
     }
 }

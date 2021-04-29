@@ -42,8 +42,10 @@ class SportDetailViewController: UIViewController {
         viewPager.tintColor = #colorLiteral(red: 0.5076961517, green: 0.2106034458, blue: 0.2362745106, alpha: 1)
         let vc1 = mainStoryboard.instantiateViewController(withIdentifier: "UpcomingViewController") as! UpcomingViewController
         vc1.title = "Upcoming"
+        vc1.sportType = sportTitle
         let vc2 = mainStoryboard.instantiateViewController(withIdentifier: "LiveViewController") as! LiveViewController
         vc2.title = "Live"
+        vc2.sportType = sportTitle
         subControllers = [vc1, vc2]
         viewPager.reload()
     }

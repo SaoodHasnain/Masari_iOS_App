@@ -57,14 +57,18 @@ class Response: Codable {
     let goals: Goals?
     let score: Score?
     let events: [Event]?
+    let lineups: [Lineup]?
+//    let players: [ResponsePlayer]?
 
-    init(fixture: Fixture?, league: League?, teams: Teams?, goals: Goals?, score: Score?, events: [Event]?) {
+    init(fixture: Fixture?, league: League?, teams: Teams?, goals: Goals?, score: Score?, events: [Event]?,lineups: [Lineup]?) {
         self.fixture = fixture
         self.league = league
         self.teams = teams
         self.goals = goals
         self.score = score
         self.events = events
+        self.lineups = lineups
+//        self.players = players
     }
 }
 

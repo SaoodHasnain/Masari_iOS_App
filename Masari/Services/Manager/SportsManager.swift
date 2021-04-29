@@ -12,6 +12,8 @@ class SportsManager {
     
     static let instance = SportsManager()
     
+    //MARK:- ALl function user for football
+    
     func getFootballSports(completion: @escaping (_ success: Bool, _ liveMacth: FootballModel?, _ error: Error?) ->()){
         
    
@@ -95,7 +97,7 @@ class SportsManager {
         }
     }
 
-    func getliveMatchDetail(fixtureId: Int, completion: @escaping (_ success: Bool, _ detail: LeaguesModel?, _ error: Error?) ->()){
+    func getliveMatchDetail(fixtureId: Int, completion: @escaping (_ success: Bool, _ detail: LiveMatchDetailModel?, _ error: Error?) ->()){
         
         APIHelper.sharedIntance.sendGetRequest(url: "https://api-football-v1.p.rapidapi.com/v3/fixtures?id=\(fixtureId)", headers: headers, params: nil) { (respone) in
             if respone.error == nil {
@@ -103,19 +105,19 @@ class SportsManager {
                 let json = try! JSONSerialization.jsonObject(with: respone.data!) as! Dictionary<String,AnyObject>
                 print(json)
 
-//                do{
-//                    let decoder = JSONDecoder()
-//                    let data = try decoder.decode(LeaguesModel.self, from: respone.data!)
-//                    print(json)
-//                    completion(true, data,nil)
-//
-//                }
-//                catch let decodingError
-//                {
-//                    completion(false, nil,decodingError)
-//                    print(decodingError)
-//                }
-//            }
+                do{
+                    let decoder = JSONDecoder()
+                    let data = try decoder.decode(LiveMatchDetailModel.self, from: respone.data!)
+                    print(json)
+                    completion(true, data,nil)
+
+                }
+                catch let decodingError
+                {
+                    completion(false, nil,decodingError)
+                    print(decodingError)
+                }
+            
             }
             else
             {
@@ -125,4 +127,39 @@ class SportsManager {
         }
     }
     
+    //MARK:- ALl Functions user for base ball
+    
+    
+    func getBaseBallUpcoming(completion: @escaping (_ success: Bool, _ baseBall: BaseBallModel?, _ error: Error?) ->()){
+        
+        APIHelper.sharedIntance.sendGetRequest(url: "https://api-baseball.p.rapidapi.com/games?date=2021-04-29", headers: baseBallHeaders, params: nil) { (respone) in
+            if respone.error == nil {
+                
+                let json = try! JSONSerialization.jsonObject(with: respone.data!) as! Dictionary<String,AnyObject>
+                print(json)
+
+//                do{
+//                    let decoder = JSONDecoder()
+//                    let data = try decoder.decode(BaseBallModel.self, from: respone.data!)
+//                    print(json)
+//                    completion(true, data,nil)
+//
+//                }
+//                catch let decodingError
+//                {
+//                    completion(false, nil,decodingError)
+//                    print(decodingError)
+//                }
+            
+            }
+            else
+            {
+                completion(false, nil,respone.error)
+                print("No data found")
+            }
+        }
+    }
+
+    
 }
+

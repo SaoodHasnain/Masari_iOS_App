@@ -11,9 +11,9 @@ class UpcomingViewController: UIViewController {
     
     @IBOutlet weak var upcomingTableView: UITableView!
     @IBOutlet weak var noDataSatck: UIStackView!
-
+    
     var upComing: FootballModel?
-
+    var sportType : String?
     
     //MARK:- Controller Life Cycle
     
@@ -25,10 +25,21 @@ class UpcomingViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        getFootBallUpcoming()
+        callApiTheBaseOfSupportType()
     }
     
     //MARK:- Supporting Functions
+    
+    func callApiTheBaseOfSupportType(){
+        
+        if sportType == "NFL-Football"{
+            getFootBallUpcoming()
+        }
+        else if sportType == "MLB-Baseball" {
+            getbaseBallUpcoming()
+        }
+        
+    }
     
     func getFootBallUpcoming(){
         showLoader()
@@ -56,6 +67,31 @@ class UpcomingViewController: UIViewController {
         }
     }
     
+    func getbaseBallUpcoming(){
+        showLoader()
+        SportsManager.instance.getBaseBallUpcoming { [weak self](success, liveMatch, error) in
+            if success {
+                self?.hideLoader()
+//                if liveMatch?.response?.count == 0 {
+//                    self?.noDataSatck.isHidden = false
+//                }
+//                else
+//                {
+//                    self?.noDataSatck.isHidden = true
+//                    DispatchQueue.main.async {
+//                        self?.upcomingTableView.reloadData()
+//                    }
+//                    
+//                }
+            }
+            else
+            {
+                self?.hideLoader()
+                Alert.showMsg(msg: error?.localizedDescription ?? "")
+            }
+        }
+    }
+    
     
     //MARK:- Actions
     
@@ -63,7 +99,7 @@ class UpcomingViewController: UIViewController {
 }
 
 extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -83,7 +119,7 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 168
     }
