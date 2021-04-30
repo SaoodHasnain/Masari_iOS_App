@@ -48,7 +48,6 @@ extension CasinoViewController: UITableViewDelegate, UITableViewDataSource {
         return 70
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller: SportDetailViewController = SportDetailViewController.initiateFrom(Storybaord: .Main)
-        self.pushController(contorller: controller, animated: true)
+        
     }
 }

@@ -45,7 +45,7 @@ class PlayerDetailViewController: UIViewController {
     func getMatchDetail(){
         
         showLoader()
-        SportsManager.instance.getliveMatchDetail(fixtureId: selectedMatch?.fixture?.id ?? 0) { [weak self](success, detail, error) in
+        FootballManager.instance.getliveMatchDetail(fixtureId: selectedMatch?.fixture?.id ?? 0) { [weak self](success, detail, error) in
             if success {
                 self?.hideLoader()
                 if detail?.response?.count  ?? 0 > 0 && detail?.response?[0].lineups?.count ?? 0 > 0 {

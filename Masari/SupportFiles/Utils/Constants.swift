@@ -27,6 +27,41 @@ enum albumType: String {
 
 }
 
+func getCurrentYear() -> String{
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy"
+    return (formatter.string(from: Date()))
+}
+
+func getCurrentDate() -> String{
+    let currentDateTime = Date()
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return (formatter.string(from: currentDateTime))
+}
+func currentdateToaddOnday() -> String{
+    let currentDate = Date()
+    var dateComponent = DateComponents()
+    dateComponent.day = 1
+    let futureDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+   return ((formatter.string(from: futureDate!)))
+}
+
+struct Currency {
+
+    private static let formatter: NumberFormatter = {
+        let formatter         = NumberFormatter()
+        formatter.numberStyle = .currency
+        return formatter
+    }()
+    
+    static func stringFrom(_ decimal: Decimal, currency: String? = nil) -> String {
+        return self.formatter.string(from: decimal as NSDecimalNumber)!
+    }
+}
+
 func getdatefromUNixTimes(time: Double) -> String{
     let unixTimeStamp = time
     let exactDate = NSDate.init(timeIntervalSince1970: unixTimeStamp)

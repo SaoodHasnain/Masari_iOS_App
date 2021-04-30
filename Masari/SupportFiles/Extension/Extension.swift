@@ -88,33 +88,7 @@ extension UIViewController {
     
 }
 
-func getCurrentYear() -> String{
-    let formatter = DateFormatter()
-    formatter.dateFormat = "yyyy"
-    return (formatter.string(from: Date()))
-}
 
-func getCurrentTime() -> String{
-    let currentDateTime = Date()
-    let formatter = DateFormatter()
-    
-    formatter.timeStyle = .medium
-    formatter.dateStyle = .none
-    return (formatter.string(from: currentDateTime))
-}
-
-struct Currency {
-
-    private static let formatter: NumberFormatter = {
-        let formatter         = NumberFormatter()
-        formatter.numberStyle = .currency
-        return formatter
-    }()
-    
-    static func stringFrom(_ decimal: Decimal, currency: String? = nil) -> String {
-        return self.formatter.string(from: decimal as NSDecimalNumber)!
-    }
-}
 
 extension UIImage {
     

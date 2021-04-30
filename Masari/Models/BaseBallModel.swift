@@ -7,46 +7,59 @@
 
 import Foundation
 
+// MARK: - BaseBallModel
 class BaseBallModel: Codable {
     let baseBallModelGet: String?
-    let parameters: Parameter?
+    let parameters: BParameters?
+    let errors: [String]?
     let results: Int?
-    let response: [BaseBallResponse]?
+    let response: [BaseBAllResponse]?
 
     enum CodingKeys: String, CodingKey {
         case baseBallModelGet = "get"
-        case parameters, results, response
+        case parameters, errors, results, response
     }
 
-    init(baseBallModelGet: String?, parameters: Parameter?, results: Int?, response: [BaseBallResponse]?) {
+    init(baseBallModelGet: String?, parameters: BParameters?, errors: [String]?, results: Int?, response: [BaseBAllResponse]?) {
         self.baseBallModelGet = baseBallModelGet
         self.parameters = parameters
+        self.errors = errors
         self.results = results
         self.response = response
     }
 }
 
-// MARK: - Response
-class BaseBallResponse: Codable {
-    let id: Int?
-    let date: Date?
-    let time: String?
-    let timestamp: Int?
-    let timezone: Timezone?
-    let week: String?
-    let status: Status?
-    let country: BCountry?
-    let league: League?
-    let teams: Teams?
-    let scores: Scores?
+// MARK: - Parameters
+class BParameters: Codable {
+    let date: String?
 
-    init(id: Int?, date: Date?, time: String?, timestamp: Int?, timezone: Timezone?, week: String?, status: Status?, country: BCountry?, league: League?, teams: Teams?, scores: Scores?) {
+    init(date: String?) {
+        self.date = date
+    }
+}
+
+// MARK: - Response
+class BaseBAllResponse: Codable {
+    let id: Int?
+    let date: String?
+    let time: String?
+    let timestamp: Double?
+    let timezone: Timezone?
+//    let week: String?
+    let status: BStatus?
+    let country: BCountry?
+    let league: BLeague?
+    let teams: BTeams?
+    let scores: Scores?
+//        , week: String?
+
+    init(id: Int?, date: String?, time: String?, timestamp: Double?, timezone: Timezone?, status: BStatus?, country: BCountry?, league: BLeague?, teams: BTeams?, scores: Scores?) {
         self.id = id
         self.date = date
         self.time = time
         self.timestamp = timestamp
         self.timezone = timezone
-        self.week = week
+//        self.week = week
         self.status = status
         self.country = country
         self.league = league
@@ -58,14 +71,14 @@ class BaseBallResponse: Codable {
 // MARK: - Country
 class BCountry: Codable {
     let id: Int?
-    let name: CountryName?
-    let code: Code?
+    let name: String?
+//    let code: Code?
     let flag: String?
 
-    init(id: Int?, name: CountryName?, code: Code?, flag: String?) {
+    init(id: Int?, name: String?, flag: String?) {
         self.id = id
         self.name = name
-        self.code = code
+//        self.code = code
         self.flag = flag
     }
 }
@@ -85,29 +98,29 @@ enum CountryName: String, Codable {
 }
 
 // MARK: - League
-//class League: Codable {
-//    let id: Int?
-//    let name: LeagueName?
+class BLeague: Codable {
+    let id: Int?
+    let name: String?
 //    let type: TypeEnum?
-//    let logo: String?
-//    let season: Int?
-//
-//    init(id: Int?, name: LeagueName?, type: TypeEnum?, logo: String?, season: Int?) {
-//        self.id = id
-//        self.name = name
+    let logo: String?
+    let season: Int?
+
+    init(id: Int?, name: String?,  logo: String?, season: Int?) {
+        self.id = id
+        self.name = name
 //        self.type = type
-//        self.logo = logo
-//        self.season = season
-//    }
-//}
-//
+        self.logo = logo
+        self.season = season
+    }
+}
+
 //enum LeagueName: String, Codable {
 //    case cpbl = "CPBL"
 //    case hoofdklasse = "Hoofdklasse"
 //    case mlb = "MLB"
 //    case npb = "NPB"
 //}
-//
+
 //enum TypeEnum: String, Codable {
 //    case league = "League"
 //}
@@ -169,40 +182,36 @@ class Innings: Codable {
     }
 }
 
-//// MARK: - Status
-//class Status: Codable {
-//    let long: Long?
-//    let short: Short?
-//
-//    init(long: Long?, short: Short?) {
-//        self.long = long
-//        self.short = short
-//    }
-//}
+// MARK: - Status
+class BStatus: Codable {
+    let long: String?
+    let short: String?
 
-enum Long: String, Codable {
-    case finished = "Finished"
-    case inning1 = "Inning 1"
-    case notStarted = "Not Started"
-    case postponed = "Postponed"
+    init(long: String?, short: String?) {
+        self.long = long
+        self.short = short
+    }
 }
 
-enum Short: String, Codable {
-    case ft = "FT"
-    case in1 = "IN1"
-    case ns = "NS"
-    case post = "POST"
-}
-
-//// MARK: - Teams
-//class Teams: Codable {
-//    let home, away: TeamsAway?
-//
-//    init(home: TeamsAway?, away: TeamsAway?) {
-//        self.home = home
-//        self.away = away
-//    }
+//enum Long: String, Codable {
+//    case finished = "Finished"
+//    case postponed = "Postponed"
 //}
+//
+//enum Short: String, Codable {
+//    case ft = "FT"
+//    case post = "POST"
+//}
+
+// MARK: - Teams
+class BTeams: Codable {
+    let home, away: TeamsAway?
+
+    init(home: TeamsAway?, away: TeamsAway?) {
+        self.home = home
+        self.away = away
+    }
+}
 
 // MARK: - TeamsAway
 class TeamsAway: Codable {

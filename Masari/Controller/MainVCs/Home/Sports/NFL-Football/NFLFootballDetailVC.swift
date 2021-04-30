@@ -7,7 +7,7 @@
 
 import UIKit
 import LZViewPager
-class SportDetailViewController: UIViewController {
+class NFLFootballDetailVC: UIViewController {
 
 
     //MARK:- Properties
@@ -40,10 +40,9 @@ class SportDetailViewController: UIViewController {
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         viewPager.tintColor = #colorLiteral(red: 0.5076961517, green: 0.2106034458, blue: 0.2362745106, alpha: 1)
-        let vc1 = mainStoryboard.instantiateViewController(withIdentifier: "UpcomingViewController") as! UpcomingViewController
+        let vc1 = mainStoryboard.instantiateViewController(withIdentifier: "FootballUpcomingMatchVC") as! FootballUpcomingMatchVC
         vc1.title = "Upcoming"
-        vc1.sportType = sportTitle
-        let vc2 = mainStoryboard.instantiateViewController(withIdentifier: "LiveViewController") as! LiveViewController
+        let vc2 = mainStoryboard.instantiateViewController(withIdentifier: "FootballLiveMatchVC") as! FootballLiveMatchVC
         vc2.title = "Live"
         vc2.sportType = sportTitle
         subControllers = [vc1, vc2]
@@ -62,7 +61,7 @@ class SportDetailViewController: UIViewController {
     }
 }
 
-extension SportDetailViewController: UITableViewDelegate, UITableViewDataSource {
+extension NFLFootballDetailVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -80,7 +79,7 @@ extension SportDetailViewController: UITableViewDelegate, UITableViewDataSource 
     }
 }
 
-extension SportDetailViewController: LZViewPagerDelegate, LZViewPagerDataSource{
+extension NFLFootballDetailVC: LZViewPagerDelegate, LZViewPagerDataSource{
     func numberOfItems() -> Int {
         return self.subControllers.count
     }

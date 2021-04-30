@@ -8,11 +8,12 @@
 import UIKit
 import Alamofire
 
-class SportsManager {
+class FootballManager {
     
-    static let instance = SportsManager()
+    static let instance = FootballManager()
     
-    //MARK:- ALl function user for football
+    //MARK:- Football get live matches
+    
     
     func getFootballSports(completion: @escaping (_ success: Bool, _ liveMacth: FootballModel?, _ error: Error?) ->()){
         
@@ -42,6 +43,9 @@ class SportsManager {
         }
     }
     
+    //MARK:- Football get live upcomming matches
+    
+    
     func getFootballUpcomingSports(completion: @escaping (_ success: Bool, _ liveMacth: FootballModel?, _ error: Error?) ->()){
         
    
@@ -70,6 +74,8 @@ class SportsManager {
         }
     }
     
+    //MARK:- Football get leagues
+    
     func getFootBallLeagues(completion: @escaping (_ success: Bool, _ leagues: LeaguesModel?, _ error: Error?) ->()){
         
         APIHelper.sharedIntance.sendGetRequest(url: "https://api-football-v1.p.rapidapi.com/v3/leagues?current=true&season=\(getCurrentYear())", headers: headers, params: nil) { (respone) in
@@ -96,7 +102,8 @@ class SportsManager {
             }
         }
     }
-
+    //MARK:- Football get live matches detail
+    
     func getliveMatchDetail(fixtureId: Int, completion: @escaping (_ success: Bool, _ detail: LiveMatchDetailModel?, _ error: Error?) ->()){
         
         APIHelper.sharedIntance.sendGetRequest(url: "https://api-football-v1.p.rapidapi.com/v3/fixtures?id=\(fixtureId)", headers: headers, params: nil) { (respone) in
@@ -126,40 +133,6 @@ class SportsManager {
             }
         }
     }
-    
-    //MARK:- ALl Functions user for base ball
-    
-    
-    func getBaseBallUpcoming(completion: @escaping (_ success: Bool, _ baseBall: BaseBallModel?, _ error: Error?) ->()){
-        
-        APIHelper.sharedIntance.sendGetRequest(url: "https://api-baseball.p.rapidapi.com/games?date=2021-04-29", headers: baseBallHeaders, params: nil) { (respone) in
-            if respone.error == nil {
-                
-                let json = try! JSONSerialization.jsonObject(with: respone.data!) as! Dictionary<String,AnyObject>
-                print(json)
-
-//                do{
-//                    let decoder = JSONDecoder()
-//                    let data = try decoder.decode(BaseBallModel.self, from: respone.data!)
-//                    print(json)
-//                    completion(true, data,nil)
-//
-//                }
-//                catch let decodingError
-//                {
-//                    completion(false, nil,decodingError)
-//                    print(decodingError)
-//                }
-            
-            }
-            else
-            {
-                completion(false, nil,respone.error)
-                print("No data found")
-            }
-        }
-    }
-
     
 }
 

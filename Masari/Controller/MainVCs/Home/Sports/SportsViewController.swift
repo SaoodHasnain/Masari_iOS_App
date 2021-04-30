@@ -51,8 +51,15 @@ extension SportsViewController: UITableViewDelegate, UITableViewDataSource {
         return 70
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller: SportDetailViewController = SportDetailViewController.initiateFrom(Storybaord: .Main)
+        if indexPath.row == 1 {
+        let controller: MLbBaseballVC = MLbBaseballVC.initiateFrom(Storybaord: .Main)
         controller.sportTitle = sportArray[indexPath.row]["name"] as? String
         self.pushController(contorller: controller, animated: true)
+        }
+        else if indexPath.row == 2 {
+        let controller: NFLFootballDetailVC = NFLFootballDetailVC.initiateFrom(Storybaord: .Main)
+        controller.sportTitle = sportArray[indexPath.row]["name"] as? String
+        self.pushController(contorller: controller, animated: true)
+        }
     }
 }

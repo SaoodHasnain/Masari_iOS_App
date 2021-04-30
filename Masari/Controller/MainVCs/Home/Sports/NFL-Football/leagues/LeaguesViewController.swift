@@ -40,7 +40,7 @@ class LeaguesViewController: UIViewController, UISearchBarDelegate{
     
     func getAllleagues(){
         showLoader()
-        SportsManager.instance.getFootBallLeagues { [weak self](success, league, error) in
+        FootballManager.instance.getFootBallLeagues { [weak self](success, league, error) in
             if success {
                 self?.hideLoader()
                 if league?.response?.count == 0 {

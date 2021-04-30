@@ -1,51 +1,39 @@
 //
-//  LiveViewController.swift
+//  UpcomingViewController.swift
 //  Masari
 //
 //  Created by Hamza Shahbaz on 01/04/2021.
 //
 
 import UIKit
-import SDWebImage
 
-
-class LiveViewController: UIViewController {
+class FootballUpcomingMatchVC: UIViewController {
     
-    //MARK:- Properties
-    
-    @IBOutlet weak var sportTableView: UITableView!
+    @IBOutlet weak var upcomingTableView: UITableView!
     @IBOutlet weak var noDataSatck: UIStackView!
     
+    var upComing: FootballModel?
     var sportType : String?
-    var liveMatch: FootballModel?
     
     //MARK:- Controller Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ConfigureCell(tableView: sportTableView, collectionView: nil, nibName: "FootballCell", reuseIdentifier: "FootballCell", cellType: .tblView)
         
-        
+        ConfigureCell(tableView: upcomingTableView, collectionView: nil, nibName: "FootballCell", reuseIdentifier: "FootballCell", cellType: .tblView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if sportType == "NFL-Football"{
-            getFootBallLiveMAtch()
-        }
+        getFootBallUpcoming()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        noDataSatck.isHidden = true
-    }
-    
-  
     //MARK:- Supporting Functions
     
-    func getFootBallLiveMAtch(){
+    
+    func getFootBallUpcoming(){
         showLoader()
-        SportsManager.instance.getFootballSports { [weak self](success, liveMatch, error) in
+        FootballManager.instance.getFootballUpcomingSports { [weak self](success, liveMatch, error) in
             if success {
                 self?.hideLoader()
                 if liveMatch?.response?.count == 0 {
@@ -53,14 +41,13 @@ class LiveViewController: UIViewController {
                 }
                 else
                 {
-                    self?.liveMatch = liveMatch
+                    self?.upComing = liveMatch
                     self?.noDataSatck.isHidden = true
                     DispatchQueue.main.async {
-                        self?.sportTableView.reloadData()
+                        self?.upcomingTableView.reloadData()
                     }
                     
                 }
-                
             }
             else
             {
@@ -76,36 +63,29 @@ class LiveViewController: UIViewController {
     
 }
 
-
-extension LiveViewController: UITableViewDelegate, UITableViewDataSource {
-
+extension FootballUpcomingMatchVC: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return liveMatch?.response?.count ?? 0
+        return upComing?.response?.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FootballCell", for: indexPath) as! FootballCell
-        let data = liveMatch?.response
+        let data = upComing?.response
+        let timeStamp = data?[indexPath.row].fixture?.timestamp
+        cell.lblRemainingTime.text = getdatefromUNixTimes(time: timeStamp ?? 0)
+        cell.betNowHeight.constant = 0
+        cell.btnBetNow.isHidden = true
         cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name
         cell.LblTeam2.text = data?[indexPath.row].teams?.away?.name
-        cell.lblScore.text  = "\(data?[indexPath.row].goals?.home ?? 0):\(data?[indexPath.row].goals?.away ?? 0)"
-        cell.lblRemainingTime.text = "\(data?[indexPath.row].fixture?.status?.long ?? "")\n \(data?[indexPath.row].fixture?.status?.elapsed ?? 0)"
         cell.team1ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.home?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         return cell
     }
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 212
-    }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller: LiveMatchDetailViewController = LiveMatchDetailViewController.initiateFrom(Storybaord: .Main)
-        if liveMatch?.response?.count ?? 0 > 0 {
-            controller.selectedMatch = liveMatch?.response?[indexPath.row]
-        }
-        self.pushController(contorller: controller, animated: true)
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 168
     }
 }
