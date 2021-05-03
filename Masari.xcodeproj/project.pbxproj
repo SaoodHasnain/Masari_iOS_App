@@ -28,6 +28,11 @@
 		FA1109C3263BEA4000FE0663 /* BaseballTommorowMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1109C2263BEA4000FE0663 /* BaseballTommorowMatchVC.swift */; };
 		FA1109C7263BEE0800FE0663 /* BaseballCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1109C5263BEE0800FE0663 /* BaseballCell.swift */; };
 		FA1109C8263BEE0800FE0663 /* BaseballCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1109C6263BEE0800FE0663 /* BaseballCell.xib */; };
+		FA1B1573263FF2A1008CD9A3 /* HockeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B1572263FF2A1008CD9A3 /* HockeyModel.swift */; };
+		FA1B1576263FF4F5008CD9A3 /* HockeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B1575263FF4F5008CD9A3 /* HockeyManager.swift */; };
+		FA1B157A263FF5FD008CD9A3 /* HockeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B1579263FF5FD008CD9A3 /* HockeyViewController.swift */; };
+		FA1B1580263FF65F008CD9A3 /* HockeyTodayMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B157F263FF65F008CD9A3 /* HockeyTodayMatchVC.swift */; };
+		FA1B1584263FF676008CD9A3 /* HockeyTomorrowMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B1583263FF675008CD9A3 /* HockeyTomorrowMatchVC.swift */; };
 		FA1FA6B9261300540002D203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA6B8261300540002D203 /* AppDelegate.swift */; };
 		FA1FA6BB261300540002D203 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA6BA261300540002D203 /* SceneDelegate.swift */; };
 		FA1FA6C0261300540002D203 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1FA6BE261300540002D203 /* Splash.storyboard */; };
@@ -105,6 +110,11 @@
 		FA1109C2263BEA4000FE0663 /* BaseballTommorowMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseballTommorowMatchVC.swift; sourceTree = "<group>"; };
 		FA1109C5263BEE0800FE0663 /* BaseballCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseballCell.swift; sourceTree = "<group>"; };
 		FA1109C6263BEE0800FE0663 /* BaseballCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseballCell.xib; sourceTree = "<group>"; };
+		FA1B1572263FF2A1008CD9A3 /* HockeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyModel.swift; sourceTree = "<group>"; };
+		FA1B1575263FF4F5008CD9A3 /* HockeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyManager.swift; sourceTree = "<group>"; };
+		FA1B1579263FF5FD008CD9A3 /* HockeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyViewController.swift; sourceTree = "<group>"; };
+		FA1B157F263FF65F008CD9A3 /* HockeyTodayMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyTodayMatchVC.swift; sourceTree = "<group>"; };
+		FA1B1583263FF675008CD9A3 /* HockeyTomorrowMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyTomorrowMatchVC.swift; sourceTree = "<group>"; };
 		FA1FA6B5261300540002D203 /* Masari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Masari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1FA6B8261300540002D203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA1FA6BA261300540002D203 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +223,7 @@
 				FAB723032631723300D28D32 /* LeaguesModel.swift */,
 				FADEB0A0263A8B9D00F4D99B /* LiveMatchDetailModel.swift */,
 				FADEB0B1263AD5B600F4D99B /* BaseBallModel.swift */,
+				FA1B1572263FF2A1008CD9A3 /* HockeyModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +258,32 @@
 			isa = PBXGroup;
 			children = (
 				FA1109BF263BE9B100FE0663 /* BaseballTodayMatchVC.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		FA1B1578263FF585008CD9A3 /* Ice-Hockey */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B1579263FF5FD008CD9A3 /* HockeyViewController.swift */,
+				FA1B157E263FF605008CD9A3 /* Today */,
+				FA1B157D263FF602008CD9A3 /* Tomorrow */,
+			);
+			path = "Ice-Hockey";
+			sourceTree = "<group>";
+		};
+		FA1B157D263FF602008CD9A3 /* Tomorrow */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B1583263FF675008CD9A3 /* HockeyTomorrowMatchVC.swift */,
+			);
+			path = Tomorrow;
+			sourceTree = "<group>";
+		};
+		FA1B157E263FF605008CD9A3 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B157F263FF65F008CD9A3 /* HockeyTodayMatchVC.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -464,6 +501,7 @@
 			children = (
 				FABACAA6263010BD0081B37C /* FootballManager.swift */,
 				FA1109B9263BE69F00FE0663 /* BaseballManager.swift */,
+				FA1B1575263FF4F5008CD9A3 /* HockeyManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -484,6 +522,7 @@
 				1813D56E2614A0FF004356A4 /* SportsViewController.swift */,
 				FA57F05E263BDE5A002E69FC /* NFL-Football */,
 				FA1109B1263BE09900FE0663 /* MLB_Baseball */,
+				FA1B1578263FF585008CD9A3 /* Ice-Hockey */,
 			);
 			path = Sports;
 			sourceTree = "<group>";
@@ -691,11 +730,13 @@
 			files = (
 				FAB722FD2631610C00D28D32 /* FootballCell.swift in Sources */,
 				FA1109BA263BE69F00FE0663 /* BaseballManager.swift in Sources */,
+				FA1B1576263FF4F5008CD9A3 /* HockeyManager.swift in Sources */,
 				FAFD33522639503D000AFC1E /* LiveMatchDetailViewController.swift in Sources */,
 				1813D5732614A282004356A4 /* SportsCell.swift in Sources */,
 				FA3C252326130C7500718409 /* Alert.swift in Sources */,
 				FA4DA3A22615AFDC00EA09F9 /* FootballLiveMatchVC.swift in Sources */,
 				FADEB0A4263AB99000F4D99B /* PlayerDetailViewController.swift in Sources */,
+				FA1B1584263FF676008CD9A3 /* HockeyTomorrowMatchVC.swift in Sources */,
 				FA1109C0263BE9B100FE0663 /* BaseballTodayMatchVC.swift in Sources */,
 				FA3C251526130B2300718409 /* Extension.swift in Sources */,
 				FA4DA39F2615AFA900EA09F9 /* FootballUpcomingMatchVC.swift in Sources */,
@@ -707,6 +748,7 @@
 				1813D56A26149B3E004356A4 /* BetsCell.swift in Sources */,
 				1813D5862614B21B004356A4 /* MenuCell.swift in Sources */,
 				FADEB0B2263AD5B600F4D99B /* BaseBallModel.swift in Sources */,
+				FA1B1580263FF65F008CD9A3 /* HockeyTodayMatchVC.swift in Sources */,
 				FA3C251D26130C5D00718409 /* Rechability.swift in Sources */,
 				FA3C253A26130F6800718409 /* UtilityManager.swift in Sources */,
 				FAB7230126316B3500D28D32 /* LeaguesViewController.swift in Sources */,
@@ -721,6 +763,8 @@
 				FA1FA6BB261300540002D203 /* SceneDelegate.swift in Sources */,
 				1813D5822614B11C004356A4 /* MenuViewController.swift in Sources */,
 				FA3C258726134E3C00718409 /* SignupViewController.swift in Sources */,
+				FA1B157A263FF5FD008CD9A3 /* HockeyViewController.swift in Sources */,
+				FA1B1573263FF2A1008CD9A3 /* HockeyModel.swift in Sources */,
 				1813D58D2614D029004356A4 /* TransactionsViewController.swift in Sources */,
 				1813D56F2614A0FF004356A4 /* SportsViewController.swift in Sources */,
 				FADEB0A1263A8B9D00F4D99B /* LiveMatchDetailModel.swift in Sources */,

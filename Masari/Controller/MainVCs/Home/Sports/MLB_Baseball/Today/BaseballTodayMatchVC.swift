@@ -23,7 +23,7 @@ class BaseballTodayMatchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        ConfigureCell(tableView: tableView, collectionView: nil, nibName: "BaseballCell", reuseIdentifier: "BaseballCell", cellType: .tblView)
+        ConfigureCell(tableView: tableView, collectionView: nil, nibName: "FootballCell", reuseIdentifier: "FootballCell", cellType: .tblView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,22 +77,20 @@ extension BaseballTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
         return baseBallMatch?.response?.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BaseballCell", for: indexPath) as! BaseballCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FootballCell", for: indexPath) as! FootballCell
         let data = baseBallMatch?.response
         cell.team1ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.home?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
-        cell.lblTeam1Name.text = data?[indexPath.row].teams?.home?.name
-        cell.lblTeam2Name.text = data?[indexPath.row].teams?.away?.name
-        if data?[indexPath.row].status?.short == "NS" {
-            cell.lblPoint.text = ""
-            cell.lblday.text = "\(data?[indexPath.row].status?.long ?? "")"
-            cell.lblTime.text = data?[indexPath.row].time
+        cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name
+        cell.LblTeam2.text = data?[indexPath.row].teams?.away?.name
+        if data?[indexPath.row].status?.long == "Finished" || data?[indexPath.row].status?.short == "AfterOverTime" {
+            cell.lblScore.text = "[ \(data?[indexPath.row].scores?.home?.total ?? 0) : \(data?[indexPath.row].scores?.away?.total ?? 0) ]"
+            cell.lblRemainingTime.text = "\(data?[indexPath.row].status?.long ?? "")"
         }
-        else
+        else if data?[indexPath.row].status?.short != "NS"
         {
-            cell.lblTime.text = ""
-            cell.lblday.text = "\(data?[indexPath.row].status?.long ?? "")"
-            cell.lblPoint.text = "[ \(data?[indexPath.row].scores?.home?.total ?? 0) : \(data?[indexPath.row].scores?.away?.total ?? 0) ]"
+            cell.lblRemainingTime.text = data?[indexPath.row].time
+//            cell.lblScore.text = "[ \(data?[indexPath.row].scores?.home?.total ?? 0) : \(data?[indexPath.row].scores?.away?.total ?? 0) ]"
 
         }
 
@@ -100,6 +98,6 @@ extension BaseballTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 220
     }
 }

@@ -1,20 +1,20 @@
 //
-//  BaseballTommorowMatchVC.swift
+//  HockeyTomorrowMatchVC.swift
 //  Masari
 //
-//  Created by Hamza Shahbaz on 30/04/2021.
+//  Created by Hamza Shahbaz on 03/05/2021.
 //
 
 import UIKit
 
-class BaseballTommorowMatchVC: UIViewController {
-    
+class HockeyTomorrowMatchVC: UIViewController {
+
     //MARK:- Properties
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var noDataSatck: UIStackView!
     
-    var baseBallMatch: BaseBallModel?
+    var hocky: HockeyModel?
     
     //MARK:- Controller Life Cycle
     
@@ -34,7 +34,7 @@ class BaseballTommorowMatchVC: UIViewController {
     
     func getMatch(){
         showLoader()
-        BaseballManager.instance.getBaseBallMatchesByDay {[weak self] (success, baseball, error) in
+        HockeyManager.instance.getHockeyMatchesByDay {[weak self] (success, baseball, error) in
             if success {
                 self?.hideLoader()
                 if baseball?.response?.count == 0 {
@@ -42,7 +42,7 @@ class BaseballTommorowMatchVC: UIViewController {
                 }
                 else
                 {
-                    self?.baseBallMatch = baseball
+                    self?.hocky = baseball
                     self?.noDataSatck.isHidden = true
                     DispatchQueue.main.async {
                         self?.tableView.reloadData()
@@ -57,24 +57,20 @@ class BaseballTommorowMatchVC: UIViewController {
             }
         }
     }
-    
-    
-    //MARK:- Actions
-    
-    
+
 }
 
-extension BaseballTommorowMatchVC: UITableViewDelegate, UITableViewDataSource {
+extension HockeyTomorrowMatchVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return baseBallMatch?.response?.count ?? 0
+        return hocky?.response?.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FootballCell", for: indexPath) as! FootballCell
-        let data = baseBallMatch?.response
+        let data = hocky?.response
         cell.team1ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.home?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name

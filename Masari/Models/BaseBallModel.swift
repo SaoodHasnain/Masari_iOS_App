@@ -114,17 +114,6 @@ class BLeague: Codable {
     }
 }
 
-//enum LeagueName: String, Codable {
-//    case cpbl = "CPBL"
-//    case hoofdklasse = "Hoofdklasse"
-//    case mlb = "MLB"
-//    case npb = "NPB"
-//}
-
-//enum TypeEnum: String, Codable {
-//    case league = "League"
-//}
-
 // MARK: - Scores
 class Scores: Codable {
     let home, away: ScoresAway?
@@ -192,17 +181,6 @@ class BStatus: Codable {
         self.short = short
     }
 }
-
-//enum Long: String, Codable {
-//    case finished = "Finished"
-//    case postponed = "Postponed"
-//}
-//
-//enum Short: String, Codable {
-//    case ft = "FT"
-//    case post = "POST"
-//}
-
 // MARK: - Teams
 class BTeams: Codable {
     let home, away: TeamsAway?
