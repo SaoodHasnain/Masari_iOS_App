@@ -56,11 +56,17 @@ extension SportsViewController: UITableViewDelegate, UITableViewDataSource {
         controller.sportTitle = sportArray[indexPath.row]["name"] as? String
         self.pushController(contorller: controller, animated: true)
         }
+        else if indexPath.row == 0 {
+        let controller: BasketballViewController = BasketballViewController.initiateFrom(Storybaord: .Main)
+        controller.sportTitle = sportArray[indexPath.row]["name"] as? String
+        self.pushController(contorller: controller, animated: true)
+        }
         else if indexPath.row == 2 {
         let controller: NFLFootballDetailVC = NFLFootballDetailVC.initiateFrom(Storybaord: .Main)
         controller.sportTitle = sportArray[indexPath.row]["name"] as? String
         self.pushController(contorller: controller, animated: true)
         }
+        
         else if indexPath.row == 4 {
             let controller: HockeyViewController = HockeyViewController.initiateFrom(Storybaord: .Main)
             controller.sportTitle = sportArray[indexPath.row]["name"] as? String

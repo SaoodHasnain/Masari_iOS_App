@@ -82,6 +82,13 @@
 		FADEB0A1263A8B9D00F4D99B /* LiveMatchDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEB0A0263A8B9D00F4D99B /* LiveMatchDetailModel.swift */; };
 		FADEB0A4263AB99000F4D99B /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEB0A3263AB99000F4D99B /* PlayerDetailViewController.swift */; };
 		FADEB0B2263AD5B600F4D99B /* BaseBallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEB0B1263AD5B600F4D99B /* BaseBallModel.swift */; };
+		FAE1ADD626411D7900D35040 /* BasketballManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1ADD526411D7900D35040 /* BasketballManager.swift */; };
+		FAE1ADDA26411EB300D35040 /* BasketballTodayMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1ADD926411EB300D35040 /* BasketballTodayMatchVC.swift */; };
+		FAE1ADE026411FD500D35040 /* BasketballTomorrowMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1ADDF26411FD500D35040 /* BasketballTomorrowMatchVC.swift */; };
+		FAE1ADE4264120AE00D35040 /* BasketballViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1ADE3264120AE00D35040 /* BasketballViewController.swift */; };
+		FAE1ADE8264123D500D35040 /* BasketballModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1ADE7264123D500D35040 /* BasketballModel.swift */; };
+		FAE1ADEC26413ADF00D35040 /* HockeyMatchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1ADEB26413ADF00D35040 /* HockeyMatchDetailVC.swift */; };
+		FAE1ADF9264156E800D35040 /* HockeyMatchDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1ADF8264156E800D35040 /* HockeyMatchDetailModel.swift */; };
 		FAFD33522639503D000AFC1E /* LiveMatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD33512639503D000AFC1E /* LiveMatchDetailViewController.swift */; };
 		FAFF64E126136B22002A7B0B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF64E026136B22002A7B0B /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -166,6 +173,13 @@
 		FADEB0A0263A8B9D00F4D99B /* LiveMatchDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchDetailModel.swift; sourceTree = "<group>"; };
 		FADEB0A3263AB99000F4D99B /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		FADEB0B1263AD5B600F4D99B /* BaseBallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBallModel.swift; sourceTree = "<group>"; };
+		FAE1ADD526411D7900D35040 /* BasketballManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballManager.swift; sourceTree = "<group>"; };
+		FAE1ADD926411EB300D35040 /* BasketballTodayMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballTodayMatchVC.swift; sourceTree = "<group>"; };
+		FAE1ADDF26411FD500D35040 /* BasketballTomorrowMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballTomorrowMatchVC.swift; sourceTree = "<group>"; };
+		FAE1ADE3264120AE00D35040 /* BasketballViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballViewController.swift; sourceTree = "<group>"; };
+		FAE1ADE7264123D500D35040 /* BasketballModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballModel.swift; sourceTree = "<group>"; };
+		FAE1ADEB26413ADF00D35040 /* HockeyMatchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyMatchDetailVC.swift; sourceTree = "<group>"; };
+		FAE1ADF8264156E800D35040 /* HockeyMatchDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HockeyMatchDetailModel.swift; sourceTree = "<group>"; };
 		FAFD33512639503D000AFC1E /* LiveMatchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchDetailViewController.swift; sourceTree = "<group>"; };
 		FAFF64E026136B22002A7B0B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,11 +233,10 @@
 		1813D56726149AF3004356A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FABACAB5263016470081B37C /* LiveMatchModel.swift */,
-				FAB723032631723300D28D32 /* LeaguesModel.swift */,
-				FADEB0A0263A8B9D00F4D99B /* LiveMatchDetailModel.swift */,
-				FADEB0B1263AD5B600F4D99B /* BaseBallModel.swift */,
-				FA1B1572263FF2A1008CD9A3 /* HockeyModel.swift */,
+				FAE1ADF22641564200D35040 /* Football */,
+				FAE1ADEF2641563800D35040 /* Baseball */,
+				FAE1ADF12641563F00D35040 /* Hockey */,
+				FAE1ADF02641563C00D35040 /* Basketball */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,6 +281,7 @@
 				FA1B1579263FF5FD008CD9A3 /* HockeyViewController.swift */,
 				FA1B157E263FF605008CD9A3 /* Today */,
 				FA1B157D263FF602008CD9A3 /* Tomorrow */,
+				FAE1ADEA26413A2600D35040 /* MatchDetail */,
 			);
 			path = "Ice-Hockey";
 			sourceTree = "<group>";
@@ -502,6 +516,7 @@
 				FABACAA6263010BD0081B37C /* FootballManager.swift */,
 				FA1109B9263BE69F00FE0663 /* BaseballManager.swift */,
 				FA1B1575263FF4F5008CD9A3 /* HockeyManager.swift */,
+				FAE1ADD526411D7900D35040 /* BasketballManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -523,6 +538,7 @@
 				FA57F05E263BDE5A002E69FC /* NFL-Football */,
 				FA1109B1263BE09900FE0663 /* MLB_Baseball */,
 				FA1B1578263FF585008CD9A3 /* Ice-Hockey */,
+				FAE1ADD326411C8200D35040 /* Basket _ ball */,
 			);
 			path = Sports;
 			sourceTree = "<group>";
@@ -578,6 +594,75 @@
 				FAFD33512639503D000AFC1E /* LiveMatchDetailViewController.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		FAE1ADD326411C8200D35040 /* Basket _ ball */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1ADE3264120AE00D35040 /* BasketballViewController.swift */,
+				FAE1ADDD26411F7E00D35040 /* Today */,
+				FAE1ADDE26411F8800D35040 /* Tomorrow */,
+			);
+			path = "Basket _ ball";
+			sourceTree = "<group>";
+		};
+		FAE1ADDD26411F7E00D35040 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1ADD926411EB300D35040 /* BasketballTodayMatchVC.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		FAE1ADDE26411F8800D35040 /* Tomorrow */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1ADDF26411FD500D35040 /* BasketballTomorrowMatchVC.swift */,
+			);
+			path = Tomorrow;
+			sourceTree = "<group>";
+		};
+		FAE1ADEA26413A2600D35040 /* MatchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1ADEB26413ADF00D35040 /* HockeyMatchDetailVC.swift */,
+			);
+			path = MatchDetail;
+			sourceTree = "<group>";
+		};
+		FAE1ADEF2641563800D35040 /* Baseball */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB0B1263AD5B600F4D99B /* BaseBallModel.swift */,
+			);
+			path = Baseball;
+			sourceTree = "<group>";
+		};
+		FAE1ADF02641563C00D35040 /* Basketball */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1ADE7264123D500D35040 /* BasketballModel.swift */,
+			);
+			path = Basketball;
+			sourceTree = "<group>";
+		};
+		FAE1ADF12641563F00D35040 /* Hockey */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B1572263FF2A1008CD9A3 /* HockeyModel.swift */,
+				FAE1ADF8264156E800D35040 /* HockeyMatchDetailModel.swift */,
+			);
+			path = Hockey;
+			sourceTree = "<group>";
+		};
+		FAE1ADF22641564200D35040 /* Football */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB0A0263A8B9D00F4D99B /* LiveMatchDetailModel.swift */,
+				FAB723032631723300D28D32 /* LeaguesModel.swift */,
+				FABACAB5263016470081B37C /* LiveMatchModel.swift */,
+			);
+			path = Football;
 			sourceTree = "<group>";
 		};
 		FAFF64DF26136AF8002A7B0B /* MainVCs */ = {
@@ -729,13 +814,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB722FD2631610C00D28D32 /* FootballCell.swift in Sources */,
+				FAE1ADE4264120AE00D35040 /* BasketballViewController.swift in Sources */,
 				FA1109BA263BE69F00FE0663 /* BaseballManager.swift in Sources */,
 				FA1B1576263FF4F5008CD9A3 /* HockeyManager.swift in Sources */,
+				FAE1ADDA26411EB300D35040 /* BasketballTodayMatchVC.swift in Sources */,
 				FAFD33522639503D000AFC1E /* LiveMatchDetailViewController.swift in Sources */,
 				1813D5732614A282004356A4 /* SportsCell.swift in Sources */,
 				FA3C252326130C7500718409 /* Alert.swift in Sources */,
 				FA4DA3A22615AFDC00EA09F9 /* FootballLiveMatchVC.swift in Sources */,
 				FADEB0A4263AB99000F4D99B /* PlayerDetailViewController.swift in Sources */,
+				FAE1ADD626411D7900D35040 /* BasketballManager.swift in Sources */,
 				FA1B1584263FF676008CD9A3 /* HockeyTomorrowMatchVC.swift in Sources */,
 				FA1109C0263BE9B100FE0663 /* BaseballTodayMatchVC.swift in Sources */,
 				FA3C251526130B2300718409 /* Extension.swift in Sources */,
@@ -750,16 +838,19 @@
 				FADEB0B2263AD5B600F4D99B /* BaseBallModel.swift in Sources */,
 				FA1B1580263FF65F008CD9A3 /* HockeyTodayMatchVC.swift in Sources */,
 				FA3C251D26130C5D00718409 /* Rechability.swift in Sources */,
+				FAE1ADF9264156E800D35040 /* HockeyMatchDetailModel.swift in Sources */,
 				FA3C253A26130F6800718409 /* UtilityManager.swift in Sources */,
 				FAB7230126316B3500D28D32 /* LeaguesViewController.swift in Sources */,
 				FABACAA8263010BD0081B37C /* FootballManager.swift in Sources */,
 				FA3C252626130D7200718409 /* LoadingOverlay.swift in Sources */,
 				FA3C251226130AB800718409 /* Storyboard.swift in Sources */,
 				FABACAB6263016470081B37C /* LiveMatchModel.swift in Sources */,
+				FAE1ADE8264123D500D35040 /* BasketballModel.swift in Sources */,
 				FA3C251A26130C2900718409 /* Defaults.swift in Sources */,
 				FA1FA6B9261300540002D203 /* AppDelegate.swift in Sources */,
 				FABACAA9263010BD0081B37C /* APIHelper.swift in Sources */,
 				FAFF64E126136B22002A7B0B /* HomeViewController.swift in Sources */,
+				FAE1ADEC26413ADF00D35040 /* HockeyMatchDetailVC.swift in Sources */,
 				FA1FA6BB261300540002D203 /* SceneDelegate.swift in Sources */,
 				1813D5822614B11C004356A4 /* MenuViewController.swift in Sources */,
 				FA3C258726134E3C00718409 /* SignupViewController.swift in Sources */,
@@ -767,6 +858,7 @@
 				FA1B1573263FF2A1008CD9A3 /* HockeyModel.swift in Sources */,
 				1813D58D2614D029004356A4 /* TransactionsViewController.swift in Sources */,
 				1813D56F2614A0FF004356A4 /* SportsViewController.swift in Sources */,
+				FAE1ADE026411FD500D35040 /* BasketballTomorrowMatchVC.swift in Sources */,
 				FADEB0A1263A8B9D00F4D99B /* LiveMatchDetailModel.swift in Sources */,
 				1813D57F2614A9EF004356A4 /* NFLFootballDetailVC.swift in Sources */,
 				FA1109C7263BEE0800FE0663 /* BaseballCell.swift in Sources */,

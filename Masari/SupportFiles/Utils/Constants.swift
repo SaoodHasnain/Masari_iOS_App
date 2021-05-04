@@ -18,6 +18,11 @@ let HockeyHeaders: HTTPHeaders = ([
     "x-rapidapi-key": "20659b441fmshb185905e977f8a7p191811jsn2af781bf80db",
     "x-rapidapi-host": "api-hockey.p.rapidapi.com"])
 
+let BasketballHeader:HTTPHeaders = [
+    "x-rapidapi-key": "20659b441fmshb185905e977f8a7p191811jsn2af781bf80db",
+    "x-rapidapi-host": "api-basketball.p.rapidapi.com"
+]
+
 let placeHolderLeage = UIImage(named: "bet_icon")
 let placeHolderArtistImage = UIImage(named: "2")
 let menuArr = [["image": UIImage(named: "icon_user_profile")!,"name":"Profile"],["image": UIImage(named: "icon_transactions")!,"name":"Transactions"],["image": UIImage(named: "icon_settings")!,"name":"Settings"]]

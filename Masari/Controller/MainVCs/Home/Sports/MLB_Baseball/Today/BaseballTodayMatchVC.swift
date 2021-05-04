@@ -83,15 +83,14 @@ extension BaseballTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name
         cell.LblTeam2.text = data?[indexPath.row].teams?.away?.name
-        if data?[indexPath.row].status?.long == "Finished" || data?[indexPath.row].status?.short == "AfterOverTime" {
+        if data?[indexPath.row].status?.long == "Finished" || data?[indexPath.row].status?.short == "AOT" || data?[indexPath.row].status?.short?.prefix(2).contains("IN") == true {
+            cell.lblRemainingTime.text = data?[indexPath.row].status?.long
             cell.lblScore.text = "[ \(data?[indexPath.row].scores?.home?.total ?? 0) : \(data?[indexPath.row].scores?.away?.total ?? 0) ]"
-            cell.lblRemainingTime.text = "\(data?[indexPath.row].status?.long ?? "")"
         }
-        else if data?[indexPath.row].status?.short != "NS"
+        else
         {
             cell.lblRemainingTime.text = data?[indexPath.row].time
-//            cell.lblScore.text = "[ \(data?[indexPath.row].scores?.home?.total ?? 0) : \(data?[indexPath.row].scores?.away?.total ?? 0) ]"
-
+            cell.lblScore.text = data?[indexPath.row].status?.long
         }
 
         return cell

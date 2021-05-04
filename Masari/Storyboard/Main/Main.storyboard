@@ -28,38 +28,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, John" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38J-tE-3qb">
-                                <rect key="frame" x="20" y="64" width="68.5" height="20"/>
+                                <rect key="frame" x="20" y="64" width="74.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
                                 <color key="textColor" red="0.2666666667" green="0.3294117647" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance : 20$" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPV-GL-6wK">
-                                <rect key="frame" x="10" y="89" width="113.5" height="20"/>
+                                <rect key="frame" x="10" y="92.5" width="122.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
                                 <color key="textColor" red="0.2666666667" green="0.3294117647" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kio-5y-M5Q">
-                                <rect key="frame" x="0.0" y="142" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="152" width="414" height="2"/>
                                 <color key="backgroundColor" red="0.83921568629999999" green="0.85098039219999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="gnV-Rm-A1y"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon, 29 March" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hve-18-rmw">
-                                <rect key="frame" x="20" y="114" width="105" height="18"/>
+                                <rect key="frame" x="20" y="121" width="122" height="21"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Regular" family="TT Commons" pointSize="18"/>
                                 <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zh-FH-bsK">
-                                <rect key="frame" x="20" y="159" width="38" height="20"/>
+                                <rect key="frame" x="20" y="169" width="41" height="23.5"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-d6-Ajj">
-                                <rect key="frame" x="0.0" y="189" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="202.5" width="414" height="200"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="dJR-P4-7Du"/>
@@ -70,7 +70,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRu-yD-zvh">
-                                <rect key="frame" x="369" y="59" width="30" height="30"/>
+                                <rect key="frame" x="369" y="61" width="30" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caQ-jm-rQL">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -91,7 +91,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbk-hj-N1T" customClass="LZViewPager" customModule="LZViewPager">
-                                <rect key="frame" x="0.0" y="389" width="414" height="473"/>
+                                <rect key="frame" x="0.0" y="402.5" width="414" height="459.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -139,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1k-zp-e4l">
-                                <rect key="frame" x="55" y="55.5" width="75.5" height="22"/>
+                                <rect key="frame" x="55" y="53.5" width="79.5" height="26"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -168,17 +168,17 @@
                                 </connections>
                             </button>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wTD-wS-cus">
-                                <rect key="frame" x="159" y="400" width="96" height="96"/>
+                                <rect key="frame" x="155.5" y="398.5" width="103" height="99"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="ZjE-Fh-PHb">
-                                        <rect key="frame" x="13" y="0.0" width="70" height="70"/>
+                                        <rect key="frame" x="16.5" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="5N0-KF-U7e"/>
                                             <constraint firstAttribute="width" constant="70" id="F8M-1r-ofD"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofK-Y8-WXF">
-                                        <rect key="frame" x="0.0" y="80" width="96" height="16"/>
+                                        <rect key="frame" x="0.0" y="80" width="103" height="19"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -186,7 +186,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JI4-5T-Yfd">
-                                <rect key="frame" x="0.0" y="197" width="414" height="699"/>
+                                <rect key="frame" x="0.0" y="200.5" width="414" height="695.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="r7E-2y-0sT" id="D2N-gx-r7i"/>
@@ -194,7 +194,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leagues" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZ7-aM-WSC">
-                                <rect key="frame" x="15" y="167" width="71" height="20"/>
+                                <rect key="frame" x="15" y="167" width="76" height="23.5"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -331,7 +331,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-AB-B7R">
-                                <rect key="frame" x="55" y="60.5" width="75.5" height="22"/>
+                                <rect key="frame" x="55" y="58.5" width="79.5" height="26"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.25490196078431371" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -436,17 +436,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bI5-ze-Zgy">
-                                <rect key="frame" x="159" y="400" width="96" height="96"/>
+                                <rect key="frame" x="155.5" y="398.5" width="103" height="99"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="bep-jY-FOc">
-                                        <rect key="frame" x="13" y="0.0" width="70" height="70"/>
+                                        <rect key="frame" x="16.5" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="Vsk-7u-GOq"/>
                                             <constraint firstAttribute="height" constant="70" id="hH3-ee-1W9"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-Cp-YMD">
-                                        <rect key="frame" x="0.0" y="80" width="96" height="16"/>
+                                        <rect key="frame" x="0.0" y="80" width="103" height="19"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -491,17 +491,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uzD-Fi-Uhh">
-                                <rect key="frame" x="159" y="400" width="96" height="96"/>
+                                <rect key="frame" x="155.5" y="398.5" width="103" height="99"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="7Y8-rV-FxD">
-                                        <rect key="frame" x="13" y="0.0" width="70" height="70"/>
+                                        <rect key="frame" x="16.5" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="k3r-eD-UyH"/>
                                             <constraint firstAttribute="width" constant="70" id="xA1-1h-35N"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLU-7h-CBC">
-                                        <rect key="frame" x="0.0" y="80" width="96" height="16"/>
+                                        <rect key="frame" x="0.0" y="80" width="103" height="19"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -569,7 +569,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live match " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-FE-jHA">
-                                <rect key="frame" x="55" y="50.5" width="107" height="22"/>
+                                <rect key="frame" x="55" y="48.5" width="114" height="26"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -581,20 +581,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="761"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsV-Mk-LPY">
-                                                <rect key="frame" x="15" y="45" width="384" height="259"/>
+                                                <rect key="frame" x="15" y="48.5" width="384" height="271"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xlf-HZ-bi6">
-                                                        <rect key="frame" x="15" y="30" width="104" height="76"/>
+                                                        <rect key="frame" x="15" y="30" width="114" height="79"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sMK-RX-lAg">
-                                                                <rect key="frame" x="27" y="0.0" width="50" height="50"/>
+                                                                <rect key="frame" x="32" y="0.0" width="50" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="PMD-D6-gZs"/>
                                                                     <constraint firstAttribute="height" constant="50" id="PgD-Uy-Q2D"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football Team 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaL-Cm-PZu">
-                                                                <rect key="frame" x="0.0" y="60" width="104" height="16"/>
+                                                                <rect key="frame" x="0.0" y="60" width="114" height="19"/>
                                                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -602,23 +602,23 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmx-gZ-AL3">
-                                                        <rect key="frame" x="179.5" y="57" width="25" height="22"/>
+                                                        <rect key="frame" x="178" y="56.5" width="28" height="26"/>
                                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q4d-FG-WG8">
-                                                        <rect key="frame" x="265" y="30" width="104" height="76"/>
+                                                        <rect key="frame" x="255" y="30" width="114" height="79"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kRC-Yf-jMd">
-                                                                <rect key="frame" x="27" y="0.0" width="50" height="50"/>
+                                                                <rect key="frame" x="32" y="0.0" width="50" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="O2o-O6-oZd"/>
                                                                     <constraint firstAttribute="width" constant="50" id="piw-zy-7tZ"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football Team 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghK-1A-zkv">
-                                                                <rect key="frame" x="0.0" y="60" width="104" height="16"/>
+                                                                <rect key="frame" x="0.0" y="60" width="114" height="19"/>
                                                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -626,26 +626,26 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:40 remaining" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnC-cQ-snW">
-                                                        <rect key="frame" x="130.5" y="121" width="123.5" height="16"/>
+                                                        <rect key="frame" x="123.5" y="124" width="137" height="19"/>
                                                         <fontDescription key="fontDescription" name="TTCommons-Regular" family="TT Commons" pointSize="16"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obw-Mz-VD5">
-                                                        <rect key="frame" x="0.0" y="257" width="384" height="2"/>
+                                                        <rect key="frame" x="0.0" y="269" width="384" height="2"/>
                                                         <color key="backgroundColor" red="0.83921568629999999" green="0.85098039219999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="Kan-Zx-sR8"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzs-eH-QAu">
-                                                        <rect key="frame" x="0.0" y="152" width="58" height="20"/>
+                                                        <rect key="frame" x="0.0" y="158" width="60.5" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkq-QA-0RR" userLabel="LoginButton">
-                                                        <rect key="frame" x="0.0" y="207" width="384" height="40"/>
+                                                        <rect key="frame" x="0.0" y="219" width="384" height="40"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GradientView" translatesAutoresizingMaskIntoConstraints="NO" id="lHA-yv-0Yz">
                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
@@ -686,7 +686,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-I6-orz">
-                                                        <rect key="frame" x="0.0" y="182" width="32.5" height="15"/>
+                                                        <rect key="frame" x="0.0" y="191.5" width="36" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="TTCommons-Medium" family="TT Commons" pointSize="15"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -721,13 +721,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match Detail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYc-su-VIh">
-                                                <rect key="frame" x="15" y="10" width="107.5" height="20"/>
+                                                <rect key="frame" x="15" y="10" width="113" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-fK-yha">
-                                                <rect key="frame" x="8" y="349" width="398" height="384"/>
+                                                <rect key="frame" x="8" y="368" width="398" height="365"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <connections>
                                                     <outlet property="dataSource" destination="9oc-bT-AOx" id="85a-Yd-qEG"/>
@@ -735,7 +735,7 @@
                                                 </connections>
                                             </tableView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp0-b8-lhC">
-                                                <rect key="frame" x="10" y="319" width="38" height="20"/>
+                                                <rect key="frame" x="10" y="334.5" width="41" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -823,7 +823,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Detail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gw-RG-hgo">
-                                <rect key="frame" x="55" y="50.5" width="117" height="22"/>
+                                <rect key="frame" x="55" y="48.5" width="123.5" height="26"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -836,20 +836,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqs-Ua-KfD">
-                                <rect key="frame" x="10" y="111" width="394" height="118"/>
+                                <rect key="frame" x="10" y="111" width="394" height="121"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FFm-6v-bwa">
-                                        <rect key="frame" x="15" y="30" width="104" height="76"/>
+                                        <rect key="frame" x="15" y="30" width="114" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football_icon" translatesAutoresizingMaskIntoConstraints="NO" id="xq1-vT-s5n">
-                                                <rect key="frame" x="27" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="32" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="3IQ-8W-toO"/>
                                                     <constraint firstAttribute="height" constant="50" id="rLW-fF-ltV"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football Team 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrT-cD-ZhC">
-                                                <rect key="frame" x="0.0" y="60" width="104" height="16"/>
+                                                <rect key="frame" x="0.0" y="60" width="114" height="19"/>
                                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -857,23 +857,23 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUo-sm-bAC">
-                                        <rect key="frame" x="184.5" y="57" width="25" height="22"/>
+                                        <rect key="frame" x="183" y="56.5" width="28" height="26"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vaR-Tm-3sH">
-                                        <rect key="frame" x="275" y="30" width="104" height="76"/>
+                                        <rect key="frame" x="265" y="30" width="114" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Oz-aQ-fnF">
-                                                <rect key="frame" x="27" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="32" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="7xJ-pM-c2m"/>
                                                     <constraint firstAttribute="width" constant="50" id="flm-XW-KbK"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football Team 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-fn-0lh">
-                                                <rect key="frame" x="0.0" y="60" width="104" height="16"/>
+                                                <rect key="frame" x="0.0" y="60" width="114" height="19"/>
                                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -881,7 +881,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jc-9i-WT1">
-                                        <rect key="frame" x="0.0" y="116" width="394" height="2"/>
+                                        <rect key="frame" x="0.0" y="119" width="394" height="2"/>
                                         <color key="backgroundColor" red="0.83921568629999999" green="0.85098039219999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="3OI-JY-hmd"/>
@@ -906,7 +906,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4gx-gz-UcP">
-                                <rect key="frame" x="0.0" y="282" width="414" height="560"/>
+                                <rect key="frame" x="0.0" y="288" width="414" height="554"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="A1D-SV-yQ3" id="wLQ-PH-6Dh"/>
@@ -914,23 +914,23 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHc-f4-csa">
-                                <rect key="frame" x="15" y="244" width="55.5" height="18"/>
+                                <rect key="frame" x="15" y="247" width="59" height="21"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bMf-1v-Iqr">
-                                <rect key="frame" x="153" y="400" width="108" height="96"/>
+                                <rect key="frame" x="150" y="398.5" width="114.5" height="99"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="Dc9-SF-NvP">
-                                        <rect key="frame" x="19" y="0.0" width="70" height="70"/>
+                                        <rect key="frame" x="22" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="SLK-Qo-bT7"/>
                                             <constraint firstAttribute="height" constant="70" id="c4w-jH-53k"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No player found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhc-lm-7Pb">
-                                        <rect key="frame" x="0.0" y="80" width="108" height="16"/>
+                                        <rect key="frame" x="0.0" y="80" width="114.5" height="19"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1068,19 +1068,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koo-f0-Wbo">
-                                <rect key="frame" x="55" y="60.5" width="60" height="22"/>
+                                <rect key="frame" x="55" y="58.5" width="62" height="26"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxG-lP-1KW">
-                                <rect key="frame" x="15" y="131" width="49.5" height="18"/>
+                                <rect key="frame" x="15" y="131" width="51" height="21"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="DUW-Um-zoB">
-                                <rect key="frame" x="15" y="159" width="50" height="50"/>
+                                <rect key="frame" x="15" y="162" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Slr-e5-oPz"/>
                                     <constraint firstAttribute="width" constant="50" id="bq1-m4-rUP"/>
@@ -1092,7 +1092,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_edit" translatesAutoresizingMaskIntoConstraints="NO" id="54H-O4-k2F">
-                                <rect key="frame" x="364" y="169" width="30" height="30"/>
+                                <rect key="frame" x="364" y="172" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9DG-OL-O7h"/>
                                     <constraint firstAttribute="width" constant="30" id="Gae-ev-ttc"/>
@@ -1104,16 +1104,16 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="OeD-8U-dnR">
-                                <rect key="frame" x="75" y="168" width="117" height="32"/>
+                                <rect key="frame" x="75" y="168.5" width="135" height="37.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FB-lu-BrB">
-                                        <rect key="frame" x="0.0" y="0.0" width="117" height="16"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="19"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="johndoe1@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEG-vH-fPQ">
-                                        <rect key="frame" x="0.0" y="18" width="117" height="14"/>
+                                        <rect key="frame" x="0.0" y="21" width="135" height="16.5"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Medium" family="TT Commons" pointSize="14"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1178,7 +1178,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transactions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAi-AH-V4o">
-                                <rect key="frame" x="55" y="60.5" width="119.5" height="22"/>
+                                <rect key="frame" x="55" y="58.5" width="124.5" height="26"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1248,7 +1248,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wi-UY-YfA">
-                                <rect key="frame" x="55" y="60.5" width="78" height="22"/>
+                                <rect key="frame" x="55" y="58.5" width="81" height="26"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1296,7 +1296,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwI-OE-IyP">
-                                <rect key="frame" x="55" y="60.5" width="75.5" height="22"/>
+                                <rect key="frame" x="55" y="58.5" width="79.5" height="26"/>
                                 <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1401,17 +1401,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hB1-Rf-v0a">
-                                <rect key="frame" x="159" y="400" width="96" height="96"/>
+                                <rect key="frame" x="155.5" y="398.5" width="103" height="99"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="HI3-FQ-5dm">
-                                        <rect key="frame" x="13" y="0.0" width="70" height="70"/>
+                                        <rect key="frame" x="16.5" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="Jop-uH-Qg3"/>
                                             <constraint firstAttribute="height" constant="70" id="uWr-K5-tf8"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdJ-vA-IFJ">
-                                        <rect key="frame" x="0.0" y="80" width="96" height="16"/>
+                                        <rect key="frame" x="0.0" y="80" width="103" height="19"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1456,17 +1456,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TQ1-i4-JDl">
-                                <rect key="frame" x="159" y="400" width="96" height="96"/>
+                                <rect key="frame" x="155.5" y="398.5" width="103" height="99"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="Pxp-zB-WM4">
-                                        <rect key="frame" x="13" y="0.0" width="70" height="70"/>
+                                        <rect key="frame" x="16.5" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Quh-3j-iD5"/>
                                             <constraint firstAttribute="width" constant="70" id="bRW-14-5O4"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-ye-CGk">
-                                        <rect key="frame" x="0.0" y="80" width="96" height="16"/>
+                                        <rect key="frame" x="0.0" y="80" width="103" height="19"/>
                                         <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1733,6 +1733,673 @@
             </objects>
             <point key="canvasLocation" x="2822" y="-1289"/>
         </scene>
+        <!--Basketball View Controller-->
+        <scene sceneID="G87-mJ-ibK">
+            <objects>
+                <viewController storyboardIdentifier="BasketballViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QCj-VK-dAK" customClass="BasketballViewController" customModule="Masari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IU1-7u-xAr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2G-oM-d09">
+                                <rect key="frame" x="10" y="54" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="wKf-be-wKj"/>
+                                    <constraint firstAttribute="height" constant="35" id="xTX-CW-2zz"/>
+                                </constraints>
+                                <state key="normal" image="icon_back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBackTapped:" destination="QCj-VK-dAK" eventType="touchUpInside" id="4xY-SQ-8C9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CV-Xa-fbb">
+                                <rect key="frame" x="55" y="58.5" width="79.5" height="26"/>
+                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otg-tE-AV2">
+                                <rect key="frame" x="0.0" y="109" width="414" height="2"/>
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.85098039219999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="DEg-kZ-3hG"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bKF-mw-qCk">
+                                <rect key="frame" x="0.0" y="111" width="414" height="0.0"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="79P-Fj-92k"/>
+                                </constraints>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDL-VN-GXb" customClass="LZViewPager" customModule="LZViewPager">
+                                <rect key="frame" x="0.0" y="171" width="414" height="691"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37d-Rk-ozd" userLabel="LoginButton">
+                                <rect key="frame" x="25" y="121" width="364" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GradientView" translatesAutoresizingMaskIntoConstraints="NO" id="dLd-Nf-t1o">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="40"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk3-bE-GHi">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="TTCommons-Medium" family="TT Commons" pointSize="18"/>
+                                        <state key="normal" title="Matches by league">
+                                            <color key="titleColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnMatchesLeagueTapped:" destination="QCj-VK-dAK" eventType="touchUpInside" id="EKD-AC-7FG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CVD-cD-SPY"/>
+                                    <constraint firstItem="dLd-Nf-t1o" firstAttribute="leading" secondItem="37d-Rk-ozd" secondAttribute="leading" id="HBY-xR-QHp"/>
+                                    <constraint firstItem="Hk3-bE-GHi" firstAttribute="leading" secondItem="37d-Rk-ozd" secondAttribute="leading" id="Lci-Wp-5mI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hk3-bE-GHi" secondAttribute="bottom" id="bbg-bk-UYn"/>
+                                    <constraint firstAttribute="trailing" secondItem="dLd-Nf-t1o" secondAttribute="trailing" id="fC1-7C-UIE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hk3-bE-GHi" secondAttribute="trailing" id="sqs-KV-92S"/>
+                                    <constraint firstItem="Hk3-bE-GHi" firstAttribute="top" secondItem="37d-Rk-ozd" secondAttribute="top" id="tAY-6F-bxb"/>
+                                    <constraint firstItem="dLd-Nf-t1o" firstAttribute="top" secondItem="37d-Rk-ozd" secondAttribute="top" id="uFo-6C-Vdf"/>
+                                    <constraint firstAttribute="bottom" secondItem="dLd-Nf-t1o" secondAttribute="bottom" id="v6w-e9-EIW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OhS-hX-fbR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C2G-oM-d09" firstAttribute="leading" secondItem="OhS-hX-fbR" secondAttribute="leading" constant="10" id="BlE-yb-mKV"/>
+                            <constraint firstItem="bKF-mw-qCk" firstAttribute="leading" secondItem="OhS-hX-fbR" secondAttribute="leading" id="CUi-ds-6gX"/>
+                            <constraint firstItem="OhS-hX-fbR" firstAttribute="trailing" secondItem="LDL-VN-GXb" secondAttribute="trailing" id="Gzx-oc-ddv"/>
+                            <constraint firstItem="OhS-hX-fbR" firstAttribute="bottom" secondItem="LDL-VN-GXb" secondAttribute="bottom" id="KUj-sT-fIi"/>
+                            <constraint firstItem="bKF-mw-qCk" firstAttribute="top" secondItem="Otg-tE-AV2" secondAttribute="bottom" id="KUm-Ck-0kZ"/>
+                            <constraint firstItem="37d-Rk-ozd" firstAttribute="top" secondItem="Otg-tE-AV2" secondAttribute="bottom" constant="10" id="Kat-rM-12l"/>
+                            <constraint firstItem="5CV-Xa-fbb" firstAttribute="centerY" secondItem="C2G-oM-d09" secondAttribute="centerY" id="NmG-XS-3eG"/>
+                            <constraint firstItem="37d-Rk-ozd" firstAttribute="leading" secondItem="OhS-hX-fbR" secondAttribute="leading" constant="25" id="W9j-uV-42u"/>
+                            <constraint firstItem="Otg-tE-AV2" firstAttribute="top" secondItem="C2G-oM-d09" secondAttribute="bottom" constant="20" id="a4N-7A-LiS"/>
+                            <constraint firstItem="C2G-oM-d09" firstAttribute="top" secondItem="OhS-hX-fbR" secondAttribute="top" constant="10" id="bgr-Y5-eS3"/>
+                            <constraint firstAttribute="trailing" secondItem="Otg-tE-AV2" secondAttribute="trailing" id="fGX-Bd-aCp"/>
+                            <constraint firstItem="OhS-hX-fbR" firstAttribute="trailing" secondItem="37d-Rk-ozd" secondAttribute="trailing" constant="25" id="iyW-xt-u44"/>
+                            <constraint firstItem="LDL-VN-GXb" firstAttribute="leading" secondItem="OhS-hX-fbR" secondAttribute="leading" id="keS-db-EmI"/>
+                            <constraint firstItem="Otg-tE-AV2" firstAttribute="leading" secondItem="IU1-7u-xAr" secondAttribute="leading" id="qf5-3r-2DN"/>
+                            <constraint firstItem="5CV-Xa-fbb" firstAttribute="leading" secondItem="C2G-oM-d09" secondAttribute="trailing" constant="10" id="rUX-LG-q5I"/>
+                            <constraint firstItem="bKF-mw-qCk" firstAttribute="trailing" secondItem="OhS-hX-fbR" secondAttribute="trailing" id="uTq-KF-uvg"/>
+                            <constraint firstItem="LDL-VN-GXb" firstAttribute="top" secondItem="37d-Rk-ozd" secondAttribute="bottom" constant="10" id="zIV-Hf-uRg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbltitle" destination="5CV-Xa-fbb" id="nsp-ma-49b"/>
+                        <outlet property="viewPager" destination="LDL-VN-GXb" id="pz0-lH-hs6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fc0-qP-4jG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="-1948"/>
+        </scene>
+        <!--Basketball Today MatchVC-->
+        <scene sceneID="npI-X8-DPg">
+            <objects>
+                <viewController storyboardIdentifier="BasketballTodayMatchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HtK-57-KA8" customClass="BasketballTodayMatchVC" customModule="Masari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EGI-s8-Obp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k0Y-a6-1eC">
+                                <rect key="frame" x="155.5" y="398.5" width="103" height="99"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="Gwq-QS-LUB">
+                                        <rect key="frame" x="16.5" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="0vF-N1-Fn1"/>
+                                            <constraint firstAttribute="width" constant="70" id="qpB-uE-noJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AA-wi-tOb">
+                                        <rect key="frame" x="0.0" y="80" width="103" height="19"/>
+                                        <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-F5-QKD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HtK-57-KA8" id="zuz-fa-nI3"/>
+                                    <outlet property="delegate" destination="HtK-57-KA8" id="wh0-u6-o2t"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aWg-fv-T7k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ffj-F5-QKD" firstAttribute="leading" secondItem="aWg-fv-T7k" secondAttribute="leading" id="4yQ-Z9-Ion"/>
+                            <constraint firstItem="k0Y-a6-1eC" firstAttribute="centerX" secondItem="EGI-s8-Obp" secondAttribute="centerX" id="AgZ-SG-SWK"/>
+                            <constraint firstItem="ffj-F5-QKD" firstAttribute="trailing" secondItem="aWg-fv-T7k" secondAttribute="trailing" id="ClA-z9-vbf"/>
+                            <constraint firstItem="k0Y-a6-1eC" firstAttribute="centerY" secondItem="EGI-s8-Obp" secondAttribute="centerY" id="KXg-kW-H44"/>
+                            <constraint firstItem="ffj-F5-QKD" firstAttribute="top" secondItem="aWg-fv-T7k" secondAttribute="top" id="ggW-Tp-0hJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ffj-F5-QKD" secondAttribute="bottom" id="t5e-mD-FWz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="noDataSatck" destination="k0Y-a6-1eC" id="Ke9-lx-Q5J"/>
+                        <outlet property="tableView" destination="ffj-F5-QKD" id="to7-K2-i3W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQJ-8v-71q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="-1948"/>
+        </scene>
+        <!--Basketball Tomorrow MatchVC-->
+        <scene sceneID="ftY-et-pZm">
+            <objects>
+                <viewController storyboardIdentifier="BasketballTomorrowMatchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t4S-fW-7Vu" customClass="BasketballTomorrowMatchVC" customModule="Masari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ubg-xT-Cy6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dGC-DI-Uvf">
+                                <rect key="frame" x="155.5" y="398.5" width="103" height="99"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="Z05-sF-Su8">
+                                        <rect key="frame" x="16.5" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="19s-4Q-4kM"/>
+                                            <constraint firstAttribute="width" constant="70" id="CmS-Lr-Zel"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lG-h6-rBL">
+                                        <rect key="frame" x="0.0" y="80" width="103" height="19"/>
+                                        <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dOy-Mm-kKC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="t4S-fW-7Vu" id="oo6-1s-IXD"/>
+                                    <outlet property="delegate" destination="t4S-fW-7Vu" id="neF-I6-7xW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ik0-4s-Nex"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dOy-Mm-kKC" firstAttribute="leading" secondItem="ik0-4s-Nex" secondAttribute="leading" id="919-Y9-wD8"/>
+                            <constraint firstItem="dGC-DI-Uvf" firstAttribute="centerX" secondItem="ubg-xT-Cy6" secondAttribute="centerX" id="H0M-dk-A5T"/>
+                            <constraint firstItem="dOy-Mm-kKC" firstAttribute="top" secondItem="ik0-4s-Nex" secondAttribute="top" id="R4a-3t-Jch"/>
+                            <constraint firstItem="dGC-DI-Uvf" firstAttribute="centerY" secondItem="ubg-xT-Cy6" secondAttribute="centerY" id="gxi-oq-RtC"/>
+                            <constraint firstItem="dOy-Mm-kKC" firstAttribute="trailing" secondItem="ik0-4s-Nex" secondAttribute="trailing" id="qhK-K0-zsV"/>
+                            <constraint firstItem="ik0-4s-Nex" firstAttribute="bottom" secondItem="dOy-Mm-kKC" secondAttribute="bottom" id="wnl-yv-fDg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="noDataSatck" destination="dGC-DI-Uvf" id="1Ly-Tf-LR6"/>
+                        <outlet property="tableView" destination="dOy-Mm-kKC" id="zCe-nR-3wK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AyR-E6-qte" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2822" y="-1943"/>
+        </scene>
+        <!--Hockey Match DetailVC-->
+        <scene sceneID="Vy7-oU-ee3">
+            <objects>
+                <viewController storyboardIdentifier="HockeyMatchDetailVC" id="7uo-zI-Ou4" customClass="HockeyMatchDetailVC" customModule="Masari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="23F-Pb-lgB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9N-Mw-gfj">
+                                <rect key="frame" x="10" y="44" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Ogu-rD-wFf"/>
+                                    <constraint firstAttribute="height" constant="35" id="f9Y-zH-N7P"/>
+                                </constraints>
+                                <state key="normal" image="icon_back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBackTapped:" destination="7uo-zI-Ou4" eventType="touchUpInside" id="ql8-Co-pJd"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEQ-5i-yIN">
+                                <rect key="frame" x="0.0" y="99" width="414" height="2"/>
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.85098039219999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Lgz-SO-FdF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live match " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd8-hS-z4U">
+                                <rect key="frame" x="55" y="50.5" width="107" height="22"/>
+                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.25490196079999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-46-DgL">
+                                <rect key="frame" x="0.0" y="101" width="414" height="761"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enR-sM-6Z6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="899"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVz-wb-WKT">
+                                                <rect key="frame" x="15" y="45" width="384" height="481"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AW4-1j-EfS">
+                                                        <rect key="frame" x="15" y="30" width="104" height="76"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football_icon" translatesAutoresizingMaskIntoConstraints="NO" id="oKB-xO-G9x">
+                                                                <rect key="frame" x="27" y="0.0" width="50" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="50" id="cCp-L1-p3W"/>
+                                                                    <constraint firstAttribute="height" constant="50" id="zIr-1I-XXm"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football Team 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Th-Eq-U8d">
+                                                                <rect key="frame" x="0.0" y="60" width="104" height="16"/>
+                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySm-BG-JJv">
+                                                        <rect key="frame" x="179.5" y="57" width="25" height="22"/>
+                                                        <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="22"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ETA-3x-kkT">
+                                                        <rect key="frame" x="265" y="30" width="104" height="76"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football_icon" translatesAutoresizingMaskIntoConstraints="NO" id="O9Y-sA-2mp">
+                                                                <rect key="frame" x="27" y="0.0" width="50" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="Ecd-u7-SwL"/>
+                                                                    <constraint firstAttribute="width" constant="50" id="Ida-mv-8as"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Football Team 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0y-GK-H3e">
+                                                                <rect key="frame" x="0.0" y="60" width="104" height="16"/>
+                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="16"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:40 remaining" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtC-mJ-LgE">
+                                                        <rect key="frame" x="130.5" y="121" width="123.5" height="16"/>
+                                                        <fontDescription key="fontDescription" name="TTCommons-Regular" family="TT Commons" pointSize="16"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXc-ny-PSv">
+                                                        <rect key="frame" x="0.0" y="479" width="384" height="2"/>
+                                                        <color key="backgroundColor" red="0.83921568629999999" green="0.85098039219999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="2" id="9pT-Ks-ukg"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSw-qq-wjJ" userLabel="LoginButton">
+                                                        <rect key="frame" x="0.0" y="429" width="384" height="40"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GradientView" translatesAutoresizingMaskIntoConstraints="NO" id="gM7-6a-at5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGQ-lX-m5x">
+                                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="TTCommons-Medium" family="TT Commons" pointSize="16"/>
+                                                                <state key="normal" title="Bet Now">
+                                                                    <color key="titleColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="kGQ-lX-m5x" secondAttribute="bottom" id="1AV-tG-mCo"/>
+                                                            <constraint firstItem="kGQ-lX-m5x" firstAttribute="top" secondItem="JSw-qq-wjJ" secondAttribute="top" id="BZG-ba-Ugs"/>
+                                                            <constraint firstItem="gM7-6a-at5" firstAttribute="top" secondItem="JSw-qq-wjJ" secondAttribute="top" id="NUX-7Y-cGl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="gM7-6a-at5" secondAttribute="trailing" id="Pod-5g-vdy"/>
+                                                            <constraint firstAttribute="trailing" secondItem="kGQ-lX-m5x" secondAttribute="trailing" id="Tv4-Mg-WWJ"/>
+                                                            <constraint firstAttribute="height" constant="40" id="aQX-Gz-zoL"/>
+                                                            <constraint firstAttribute="bottom" secondItem="gM7-6a-at5" secondAttribute="bottom" id="gM5-it-Ov8"/>
+                                                            <constraint firstItem="gM7-6a-at5" firstAttribute="leading" secondItem="JSw-qq-wjJ" secondAttribute="leading" id="jrp-pG-PPR"/>
+                                                            <constraint firstItem="kGQ-lX-m5x" firstAttribute="leading" secondItem="JSw-qq-wjJ" secondAttribute="leading" id="vzV-y3-934"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U6P-TE-39M">
+                                                        <rect key="frame" x="10" y="157" width="364" height="252"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAI-I1-lsc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="364" height="63"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HqP-FM-P9t">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="28"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Period" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaA-9i-glJ">
+                                                                                <rect key="frame" x="10" y="5" width="88" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2-0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da3-n2-Dx7">
+                                                                                <rect key="frame" x="325" y="5" width="29" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="da3-n2-Dx7" firstAttribute="top" secondItem="HqP-FM-P9t" secondAttribute="top" constant="5" id="3gQ-4j-oIW"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="iaA-9i-glJ" secondAttribute="bottom" constant="5" id="9NH-Z5-yre"/>
+                                                                            <constraint firstItem="iaA-9i-glJ" firstAttribute="top" secondItem="HqP-FM-P9t" secondAttribute="top" constant="5" id="Anz-hF-fpa"/>
+                                                                            <constraint firstItem="iaA-9i-glJ" firstAttribute="leading" secondItem="HqP-FM-P9t" secondAttribute="leading" constant="10" id="eXw-gr-adz"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="da3-n2-Dx7" secondAttribute="bottom" constant="5" id="j9l-wT-MGq"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="da3-n2-Dx7" secondAttribute="trailing" constant="10" id="psj-mE-LJu"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:20  Goal Eureka" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-Fs-nbI">
+                                                                        <rect key="frame" x="10" y="38" width="96" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="13"/>
+                                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="HqP-FM-P9t" firstAttribute="top" secondItem="DAI-I1-lsc" secondAttribute="top" id="E1U-vp-1ps"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="HqP-FM-P9t" secondAttribute="trailing" id="Wq3-XA-1D6"/>
+                                                                    <constraint firstItem="eS3-Fs-nbI" firstAttribute="leading" secondItem="DAI-I1-lsc" secondAttribute="leading" constant="10" id="ggb-MZ-sdF"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="eS3-Fs-nbI" secondAttribute="bottom" constant="10" id="lrl-Ii-k5v"/>
+                                                                    <constraint firstItem="eS3-Fs-nbI" firstAttribute="top" secondItem="HqP-FM-P9t" secondAttribute="bottom" constant="10" id="mh2-cO-gc8"/>
+                                                                    <constraint firstItem="HqP-FM-P9t" firstAttribute="leading" secondItem="DAI-I1-lsc" secondAttribute="leading" id="xQx-ms-g9u"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxy-jx-y0j">
+                                                                <rect key="frame" x="0.0" y="63" width="364" height="63"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxG-ZK-nv6">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="28"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Period" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5w-wM-i8Y">
+                                                                                <rect key="frame" x="10" y="5" width="110.5" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0-2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBT-Fu-rOr">
+                                                                                <rect key="frame" x="325" y="5" width="29" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="N5w-wM-i8Y" firstAttribute="top" secondItem="xxG-ZK-nv6" secondAttribute="top" constant="5" id="99E-lM-zxZ"/>
+                                                                            <constraint firstItem="N5w-wM-i8Y" firstAttribute="leading" secondItem="xxG-ZK-nv6" secondAttribute="leading" constant="10" id="DDx-Br-ckg"/>
+                                                                            <constraint firstItem="KBT-Fu-rOr" firstAttribute="top" secondItem="xxG-ZK-nv6" secondAttribute="top" constant="5" id="Rvw-U2-UKS"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="N5w-wM-i8Y" secondAttribute="bottom" constant="5" id="fjb-Mn-5kx"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="KBT-Fu-rOr" secondAttribute="trailing" constant="10" id="jVn-Ii-HAd"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="KBT-Fu-rOr" secondAttribute="bottom" constant="5" id="sl5-mL-9Ra"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:20  Goal Eureka" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s20-5S-Oq1">
+                                                                        <rect key="frame" x="10" y="38" width="110.5" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="15"/>
+                                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="xxG-ZK-nv6" firstAttribute="leading" secondItem="rxy-jx-y0j" secondAttribute="leading" id="0fo-ka-d2p"/>
+                                                                    <constraint firstItem="s20-5S-Oq1" firstAttribute="leading" secondItem="rxy-jx-y0j" secondAttribute="leading" constant="10" id="5Pj-6P-M7I"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="xxG-ZK-nv6" secondAttribute="trailing" id="7NQ-Ye-4Ks"/>
+                                                                    <constraint firstItem="s20-5S-Oq1" firstAttribute="top" secondItem="xxG-ZK-nv6" secondAttribute="bottom" constant="10" id="NAV-OW-t0o"/>
+                                                                    <constraint firstItem="xxG-ZK-nv6" firstAttribute="top" secondItem="rxy-jx-y0j" secondAttribute="top" id="iLA-SM-bia"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="s20-5S-Oq1" secondAttribute="bottom" constant="10" id="oMY-uT-hNv"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKC-Yb-G1q">
+                                                                <rect key="frame" x="0.0" y="126" width="364" height="63"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rj1-Vg-57Q">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="28"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third Period" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTN-QO-had">
+                                                                                <rect key="frame" x="10" y="5" width="93" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyO-pD-fZr">
+                                                                                <rect key="frame" x="330" y="5" width="24" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="TyO-pD-fZr" secondAttribute="trailing" constant="10" id="6k8-te-qqd"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="TyO-pD-fZr" secondAttribute="bottom" constant="5" id="crP-oj-UgY"/>
+                                                                            <constraint firstItem="XTN-QO-had" firstAttribute="top" secondItem="rj1-Vg-57Q" secondAttribute="top" constant="5" id="h8b-QX-EBB"/>
+                                                                            <constraint firstItem="XTN-QO-had" firstAttribute="leading" secondItem="rj1-Vg-57Q" secondAttribute="leading" constant="10" id="h9N-8j-IWB"/>
+                                                                            <constraint firstItem="TyO-pD-fZr" firstAttribute="top" secondItem="rj1-Vg-57Q" secondAttribute="top" constant="5" id="rGz-TY-tYl"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="XTN-QO-had" secondAttribute="bottom" constant="5" id="sTj-Dd-EMY"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:20  Goal Eureka" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fs5-pd-FpA">
+                                                                        <rect key="frame" x="10" y="38" width="96" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="13"/>
+                                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Fs5-pd-FpA" firstAttribute="leading" secondItem="SKC-Yb-G1q" secondAttribute="leading" constant="10" id="6tY-fq-Iuv"/>
+                                                                    <constraint firstItem="rj1-Vg-57Q" firstAttribute="leading" secondItem="SKC-Yb-G1q" secondAttribute="leading" id="ZZ8-Zq-nhz"/>
+                                                                    <constraint firstItem="rj1-Vg-57Q" firstAttribute="top" secondItem="SKC-Yb-G1q" secondAttribute="top" id="ZmH-h7-Xhi"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="rj1-Vg-57Q" secondAttribute="trailing" id="gzu-rE-V6i"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Fs5-pd-FpA" secondAttribute="bottom" constant="10" id="mVK-kq-Keq"/>
+                                                                    <constraint firstItem="Fs5-pd-FpA" firstAttribute="top" secondItem="rj1-Vg-57Q" secondAttribute="bottom" constant="10" id="vRO-Bc-zFS"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBp-U8-Apg">
+                                                                <rect key="frame" x="0.0" y="189" width="364" height="63"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24L-We-7ds">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="28"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Over Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8B-RS-dxt">
+                                                                                <rect key="frame" x="10" y="5" width="77.5" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0-1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpS-Eb-2nL">
+                                                                                <rect key="frame" x="328" y="5" width="26" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="18"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="Z8B-RS-dxt" firstAttribute="top" secondItem="24L-We-7ds" secondAttribute="top" constant="5" id="FB6-pp-M9w"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="GpS-Eb-2nL" secondAttribute="trailing" constant="10" id="GoP-Mv-FvZ"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="GpS-Eb-2nL" secondAttribute="bottom" constant="5" id="OnS-81-gPu"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="Z8B-RS-dxt" secondAttribute="bottom" constant="5" id="Rsv-Ev-bsa"/>
+                                                                            <constraint firstItem="GpS-Eb-2nL" firstAttribute="top" secondItem="24L-We-7ds" secondAttribute="top" constant="5" id="Zby-OB-vPG"/>
+                                                                            <constraint firstItem="Z8B-RS-dxt" firstAttribute="leading" secondItem="24L-We-7ds" secondAttribute="leading" constant="10" id="bBK-jP-Ran"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:20  Goal Eureka" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tk-hc-nCF">
+                                                                        <rect key="frame" x="10" y="38" width="110.5" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="15"/>
+                                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="5tk-hc-nCF" firstAttribute="leading" secondItem="hBp-U8-Apg" secondAttribute="leading" constant="10" id="8SA-Ub-q0l"/>
+                                                                    <constraint firstItem="24L-We-7ds" firstAttribute="top" secondItem="hBp-U8-Apg" secondAttribute="top" id="G5L-0P-a9V"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="24L-We-7ds" secondAttribute="trailing" id="ODX-fZ-O7G"/>
+                                                                    <constraint firstItem="5tk-hc-nCF" firstAttribute="top" secondItem="24L-We-7ds" secondAttribute="bottom" constant="10" id="QyS-yg-wUV"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="5tk-hc-nCF" secondAttribute="bottom" constant="10" id="d9K-3h-rM2"/>
+                                                                    <constraint firstItem="24L-We-7ds" firstAttribute="leading" secondItem="hBp-U8-Apg" secondAttribute="leading" id="wBO-RU-NrY"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="AW4-1j-EfS" firstAttribute="top" secondItem="FVz-wb-WKT" secondAttribute="top" constant="30" id="CfD-x9-tOV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dXc-ny-PSv" secondAttribute="trailing" id="DSJ-F7-Xcb"/>
+                                                    <constraint firstItem="JSw-qq-wjJ" firstAttribute="leading" secondItem="FVz-wb-WKT" secondAttribute="leading" id="DtS-vT-RdR"/>
+                                                    <constraint firstItem="dXc-ny-PSv" firstAttribute="leading" secondItem="FVz-wb-WKT" secondAttribute="leading" id="GW1-eH-3Yr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="U6P-TE-39M" secondAttribute="trailing" constant="10" id="Hbw-32-H1S"/>
+                                                    <constraint firstItem="EtC-mJ-LgE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FVz-wb-WKT" secondAttribute="leading" constant="50" id="IXZ-D8-JAe"/>
+                                                    <constraint firstItem="U6P-TE-39M" firstAttribute="leading" secondItem="FVz-wb-WKT" secondAttribute="leading" constant="10" id="LR3-aK-nl0"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EtC-mJ-LgE" secondAttribute="trailing" constant="50" id="MgJ-Hf-UB1"/>
+                                                    <constraint firstItem="U6P-TE-39M" firstAttribute="top" secondItem="EtC-mJ-LgE" secondAttribute="bottom" constant="20" id="NSw-24-Zmx"/>
+                                                    <constraint firstItem="AW4-1j-EfS" firstAttribute="top" secondItem="ETA-3x-kkT" secondAttribute="top" id="PWc-Ez-zke"/>
+                                                    <constraint firstItem="ySm-BG-JJv" firstAttribute="centerX" secondItem="FVz-wb-WKT" secondAttribute="centerX" id="QDX-3n-iYc"/>
+                                                    <constraint firstItem="EtC-mJ-LgE" firstAttribute="top" secondItem="AW4-1j-EfS" secondAttribute="bottom" constant="15" id="QKe-3H-Fvv"/>
+                                                    <constraint firstItem="JSw-qq-wjJ" firstAttribute="top" secondItem="U6P-TE-39M" secondAttribute="bottom" constant="20" id="Uwa-PP-HJY"/>
+                                                    <constraint firstItem="AW4-1j-EfS" firstAttribute="leading" secondItem="FVz-wb-WKT" secondAttribute="leading" constant="15" id="ZP3-S4-0iu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dXc-ny-PSv" secondAttribute="bottom" id="bIc-rK-5xb"/>
+                                                    <constraint firstItem="EtC-mJ-LgE" firstAttribute="centerX" secondItem="ySm-BG-JJv" secondAttribute="centerX" id="cwL-Cd-2q8"/>
+                                                    <constraint firstItem="ySm-BG-JJv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AW4-1j-EfS" secondAttribute="trailing" constant="10" id="eQZ-XC-qFn"/>
+                                                    <constraint firstItem="dXc-ny-PSv" firstAttribute="top" secondItem="JSw-qq-wjJ" secondAttribute="bottom" constant="10" id="eXd-32-HsX"/>
+                                                    <constraint firstItem="ETA-3x-kkT" firstAttribute="centerY" secondItem="AW4-1j-EfS" secondAttribute="centerY" id="evh-g8-0JR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JSw-qq-wjJ" secondAttribute="trailing" id="iQx-ec-KKI"/>
+                                                    <constraint firstItem="ETA-3x-kkT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ySm-BG-JJv" secondAttribute="trailing" constant="10" id="oKI-l4-eOF"/>
+                                                    <constraint firstItem="ySm-BG-JJv" firstAttribute="centerY" secondItem="AW4-1j-EfS" secondAttribute="centerY" id="rHx-Qb-YOd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ETA-3x-kkT" secondAttribute="trailing" constant="15" id="wx5-2V-0jM"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match Detail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yx4-Yg-T7q">
+                                                <rect key="frame" x="15" y="10" width="107.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FtZ-EX-5rg">
+                                                <rect key="frame" x="8" y="571" width="398" height="300"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Lqe-Uz-OEh"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="7uo-zI-Ou4" id="XR6-Sw-aoh"/>
+                                                    <outlet property="delegate" destination="7uo-zI-Ou4" id="FbB-vi-3TD"/>
+                                                </connections>
+                                            </tableView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORp-fs-u5W">
+                                                <rect key="frame" x="10" y="541" width="38" height="20"/>
+                                                <fontDescription key="fontDescription" name="TTCommons-Bold" family="TT Commons" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="FtZ-EX-5rg" secondAttribute="trailing" id="4OX-ln-2ts"/>
+                                            <constraint firstItem="ORp-fs-u5W" firstAttribute="leading" secondItem="enR-sM-6Z6" secondAttribute="leading" constant="10" id="5Iw-2E-Vqy"/>
+                                            <constraint firstItem="FtZ-EX-5rg" firstAttribute="top" secondItem="ORp-fs-u5W" secondAttribute="bottom" constant="10" id="Owc-lA-Tep"/>
+                                            <constraint firstItem="ORp-fs-u5W" firstAttribute="top" secondItem="FVz-wb-WKT" secondAttribute="bottom" constant="15" id="Ren-JE-9OI"/>
+                                            <constraint firstItem="yx4-Yg-T7q" firstAttribute="top" secondItem="enR-sM-6Z6" secondAttribute="top" constant="10" id="TA3-rF-bV7"/>
+                                            <constraint firstItem="FVz-wb-WKT" firstAttribute="leading" secondItem="enR-sM-6Z6" secondAttribute="leading" constant="15" id="cVi-LK-uvD"/>
+                                            <constraint firstItem="FVz-wb-WKT" firstAttribute="top" secondItem="yx4-Yg-T7q" secondAttribute="bottom" constant="15" id="fj5-CU-eNs"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="FtZ-EX-5rg" secondAttribute="bottom" constant="20" id="n8N-U6-w5Y"/>
+                                            <constraint firstAttribute="trailing" secondItem="FVz-wb-WKT" secondAttribute="trailing" constant="15" id="nqv-3N-ua4"/>
+                                            <constraint firstItem="FtZ-EX-5rg" firstAttribute="leading" secondItem="enR-sM-6Z6" secondAttribute="leadingMargin" id="qIV-7M-kab"/>
+                                            <constraint firstItem="yx4-Yg-T7q" firstAttribute="leading" secondItem="enR-sM-6Z6" secondAttribute="leading" constant="15" id="ze4-Vg-JdX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="enR-sM-6Z6" firstAttribute="top" secondItem="6ie-46-DgL" secondAttribute="top" id="5o1-ld-Bgh"/>
+                                    <constraint firstAttribute="trailing" secondItem="enR-sM-6Z6" secondAttribute="trailing" id="A3K-2B-46l"/>
+                                    <constraint firstItem="enR-sM-6Z6" firstAttribute="height" secondItem="6ie-46-DgL" secondAttribute="height" priority="250" id="Jvv-le-ExH"/>
+                                    <constraint firstAttribute="bottom" secondItem="enR-sM-6Z6" secondAttribute="bottom" id="akd-tl-cfi"/>
+                                    <constraint firstItem="enR-sM-6Z6" firstAttribute="leading" secondItem="6ie-46-DgL" secondAttribute="leading" id="pdV-ck-DiY"/>
+                                    <constraint firstItem="enR-sM-6Z6" firstAttribute="centerX" secondItem="6ie-46-DgL" secondAttribute="centerX" id="zke-Ks-Yfy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YnQ-jV-EzF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dEQ-5i-yIN" secondAttribute="trailing" id="0Ic-KI-zEu"/>
+                            <constraint firstItem="6ie-46-DgL" firstAttribute="leading" secondItem="YnQ-jV-EzF" secondAttribute="leading" id="2O7-j5-FZd"/>
+                            <constraint firstItem="f9N-Mw-gfj" firstAttribute="leading" secondItem="23F-Pb-lgB" secondAttribute="leading" constant="10" id="7E6-BD-YvM"/>
+                            <constraint firstItem="dEQ-5i-yIN" firstAttribute="leading" secondItem="23F-Pb-lgB" secondAttribute="leading" id="7kx-Z0-AKL"/>
+                            <constraint firstItem="YnQ-jV-EzF" firstAttribute="bottom" secondItem="6ie-46-DgL" secondAttribute="bottom" id="Bia-3S-15V"/>
+                            <constraint firstItem="Dd8-hS-z4U" firstAttribute="centerY" secondItem="f9N-Mw-gfj" secondAttribute="centerY" id="FF8-2Y-CeX"/>
+                            <constraint firstItem="6ie-46-DgL" firstAttribute="top" secondItem="dEQ-5i-yIN" secondAttribute="bottom" id="SAJ-ZT-s29"/>
+                            <constraint firstItem="dEQ-5i-yIN" firstAttribute="top" secondItem="f9N-Mw-gfj" secondAttribute="bottom" constant="20" id="ZLd-fg-rnA"/>
+                            <constraint firstItem="YnQ-jV-EzF" firstAttribute="trailing" secondItem="6ie-46-DgL" secondAttribute="trailing" id="lQk-pf-118"/>
+                            <constraint firstItem="f9N-Mw-gfj" firstAttribute="top" secondItem="YnQ-jV-EzF" secondAttribute="top" id="r9V-iZ-aOe"/>
+                            <constraint firstItem="Dd8-hS-z4U" firstAttribute="leading" secondItem="f9N-Mw-gfj" secondAttribute="trailing" constant="10" id="uES-WX-29g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BetTableView" destination="FtZ-EX-5rg" id="rGd-5s-O5K"/>
+                        <outlet property="LblTeam1" destination="2Th-Eq-U8d" id="MzV-My-L4F"/>
+                        <outlet property="LblTeam2" destination="Y0y-GK-H3e" id="FoR-2A-v7L"/>
+                        <outlet property="lblRemainingTime" destination="EtC-mJ-LgE" id="4ST-ZV-Yka"/>
+                        <outlet property="lblScore" destination="ySm-BG-JJv" id="nyu-pY-dmf"/>
+                        <outlet property="team1ImgView" destination="oKB-xO-G9x" id="neI-Vy-5SU"/>
+                        <outlet property="team2ImgView" destination="O9Y-sA-2mp" id="O3b-dM-p2T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlZ-Dq-bz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3502.898550724638" y="-1289.0625"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GradientView" width="230" height="157"/>
@@ -1744,6 +2411,9 @@
         <image name="icon_user_profile" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

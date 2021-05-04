@@ -1,14 +1,13 @@
 //
-//  LiveMatchDetailViewController.swift
+//  BaseketballDetailVC.swift
 //  Masari
 //
-//  Created by Hamza Shahbaz on 28/04/2021.
+//  Created by Hamza Shahbaz on 04/05/2021.
 //
 
 import UIKit
-import SDWebImage
 
-class LiveMatchDetailViewController: UIViewController {
+class HockeyMatchDetailVC: UIViewController {
     
     //MARK:- Properties
     
@@ -21,7 +20,7 @@ class LiveMatchDetailViewController: UIViewController {
     @IBOutlet weak var lblScore: UILabel!
     @IBOutlet weak var BetTableView: UITableView!
     
-    var selectedMatch: Response?
+    var selectedMatch: HResponse?
     
     
     //MARK:- Controller Life Cycle
@@ -38,20 +37,14 @@ class LiveMatchDetailViewController: UIViewController {
         
         LblTeam1.text = selectedMatch?.teams?.home?.name
         LblTeam2.text = selectedMatch?.teams?.away?.name
-        lblScore.text  = "\(selectedMatch?.goals?.home ?? 0):\(selectedMatch?.goals?.away ?? 0)"
-        lblRemainingTime.text = "\(selectedMatch?.fixture?.status?.long ?? "")\n \(selectedMatch?.fixture?.status?.elapsed ?? 0)"
+//        lblScore.text  = "\(selectedMatch?.goals?.home ?? 0):\(selectedMatch?.goals?.away ?? 0)"
+        lblRemainingTime.text = "\(selectedMatch?.date?.prefix(10) ?? "") \n \(selectedMatch?.time ?? "")"
         team1ImgView.sd_setImage(with: URL(string: selectedMatch?.teams?.home?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         team2ImgView.sd_setImage(with: URL(string: selectedMatch?.teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
-        if selectedMatch?.events?.count ?? 0 > 0 && selectedMatch?.events != nil{
-            lblEvent.text = "Type:     \(selectedMatch?.events?[0].type ?? "") \n Detail:     \(selectedMatch?.events?[0].detail ?? "") \n Commnets:     \(selectedMatch?.events?[0].comments ?? "")"
-        }
-        else
-        {
-            lblEvent.text = "Event not found"
-        }
+     
     }
     
-
+    
     
     //MARK:- Actions
     
@@ -60,13 +53,13 @@ class LiveMatchDetailViewController: UIViewController {
     }
     
     @IBAction func btnBetNowTapped(_ sender: Any){
-        let controller: PlayerDetailViewController = PlayerDetailViewController.initiateFrom(Storybaord: .Main)
-        controller.selectedMatch = selectedMatch
-        self.pushController(contorller: controller, animated: true)
+//        let controller: PlayerDetailViewController = PlayerDetailViewController.initiateFrom(Storybaord: .Main)
+//        controller.selectedMatch = selectedMatch
+//        self.pushController(contorller: controller, animated: true)
     }
 }
 
-extension LiveMatchDetailViewController: UITableViewDelegate, UITableViewDataSource {
+extension HockeyMatchDetailVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
