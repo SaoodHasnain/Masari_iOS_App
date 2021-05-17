@@ -72,6 +72,8 @@
 		FA3C258726134E3C00718409 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C258626134E3C00718409 /* SignupViewController.swift */; };
 		FA4DA39F2615AFA900EA09F9 /* FootballUpcomingMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4DA39E2615AFA900EA09F9 /* FootballUpcomingMatchVC.swift */; };
 		FA4DA3A22615AFDC00EA09F9 /* FootballLiveMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4DA3A12615AFDC00EA09F9 /* FootballLiveMatchVC.swift */; };
+		FA84388B265254E200283B13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA84388A265254E200283B13 /* GoogleService-Info.plist */; };
+		FA8438902652609D00283B13 /* BetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84388F2652609D00283B13 /* BetModel.swift */; };
 		FAB722FD2631610C00D28D32 /* FootballCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB722FB2631610C00D28D32 /* FootballCell.swift */; };
 		FAB722FE2631610C00D28D32 /* FootballCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB722FC2631610C00D28D32 /* FootballCell.xib */; };
 		FAB7230126316B3500D28D32 /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7230026316B3500D28D32 /* LeaguesViewController.swift */; };
@@ -163,6 +165,8 @@
 		FA3C258626134E3C00718409 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		FA4DA39E2615AFA900EA09F9 /* FootballUpcomingMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballUpcomingMatchVC.swift; sourceTree = "<group>"; };
 		FA4DA3A12615AFDC00EA09F9 /* FootballLiveMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballLiveMatchVC.swift; sourceTree = "<group>"; };
+		FA84388A265254E200283B13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA84388F2652609D00283B13 /* BetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetModel.swift; sourceTree = "<group>"; };
 		FAB722FB2631610C00D28D32 /* FootballCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballCell.swift; sourceTree = "<group>"; };
 		FAB722FC2631610C00D28D32 /* FootballCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FootballCell.xib; sourceTree = "<group>"; };
 		FAB7230026316B3500D28D32 /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 		1813D56726149AF3004356A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA84388E2652607700283B13 /* BetsModel */,
 				FAE1ADF22641564200D35040 /* Football */,
 				FAE1ADEF2641563800D35040 /* Baseball */,
 				FAE1ADF12641563F00D35040 /* Hockey */,
@@ -341,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1FA6C6261300550002D203 /* Info.plist */,
+				FA84388A265254E200283B13 /* GoogleService-Info.plist */,
 			);
 			path = info.plist;
 			sourceTree = "<group>";
@@ -501,6 +507,21 @@
 			path = "NFL-Football";
 			sourceTree = "<group>";
 		};
+		FA84388E2652607700283B13 /* BetsModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA84388F2652609D00283B13 /* BetModel.swift */,
+			);
+			path = BetsModel;
+			sourceTree = "<group>";
+		};
+		FA843893265263E300283B13 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FABACAA5263010710081B37C /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +538,7 @@
 				FA1109B9263BE69F00FE0663 /* BaseballManager.swift */,
 				FA1B1575263FF4F5008CD9A3 /* HockeyManager.swift */,
 				FAE1ADD526411D7900D35040 /* BasketballManager.swift */,
+				FA843893265263E300283B13 /* Services */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -754,6 +776,7 @@
 				FA3C257D26132ACD00718409 /* TTCommons-Regular.ttf in Resources */,
 				FA3C257426132ACD00718409 /* TTCommons-ThinItalic.ttf in Resources */,
 				FA3C257726132ACD00718409 /* TTCommons-LightItalic.ttf in Resources */,
+				FA84388B265254E200283B13 /* GoogleService-Info.plist in Resources */,
 				FA1FA6C0261300540002D203 /* Splash.storyboard in Resources */,
 				FA3C257326132ACD00718409 /* TTCommons-Thin.ttf in Resources */,
 				FA1109C8263BEE0800FE0663 /* BaseballCell.xib in Resources */,
@@ -818,6 +841,7 @@
 				FA1109BA263BE69F00FE0663 /* BaseballManager.swift in Sources */,
 				FA1B1576263FF4F5008CD9A3 /* HockeyManager.swift in Sources */,
 				FAE1ADDA26411EB300D35040 /* BasketballTodayMatchVC.swift in Sources */,
+				FA8438902652609D00283B13 /* BetModel.swift in Sources */,
 				FAFD33522639503D000AFC1E /* LiveMatchDetailViewController.swift in Sources */,
 				1813D5732614A282004356A4 /* SportsCell.swift in Sources */,
 				FA3C252326130C7500718409 /* Alert.swift in Sources */,

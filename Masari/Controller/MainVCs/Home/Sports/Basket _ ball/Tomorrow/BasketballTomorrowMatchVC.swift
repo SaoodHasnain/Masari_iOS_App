@@ -76,8 +76,7 @@ extension BasketballTomorrowMatchVC: UITableViewDelegate, UITableViewDataSource 
         cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name
         cell.LblTeam2.text = data?[indexPath.row].teams?.away?.name
         cell.lblRemainingTime.text = data?[indexPath.row].time
-        cell.lblScore.isHidden = true
-        
+        cell.betNowView.isHidden = true
         return cell
     }
     

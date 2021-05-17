@@ -70,6 +70,9 @@ class FootballLiveMatchVC: UIViewController {
         }
     }
     
+    @objc func handleBet(sender: UIButton){
+        
+    }
     
     //MARK:- Actions
     
@@ -94,6 +97,8 @@ extension FootballLiveMatchVC: UITableViewDelegate, UITableViewDataSource {
         cell.lblRemainingTime.text = "\(data?[indexPath.row].fixture?.status?.long ?? "")\n \(data?[indexPath.row].fixture?.status?.elapsed ?? 0)"
         cell.team1ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.home?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
+        cell.btnBetNow.addTarget(self, action: #selector(handleBet(sender:)), for: .touchUpInside)
+        cell.btnBetNow.tag = indexPath.row
         return cell
     }
 

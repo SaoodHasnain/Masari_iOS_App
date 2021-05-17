@@ -21,7 +21,6 @@ class BasketballTodayMatchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         ConfigureCell(tableView: tableView, collectionView: nil, nibName: "FootballCell", reuseIdentifier: "FootballCell", cellType: .tblView)
     }
     
@@ -78,12 +77,18 @@ extension BasketballTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name
         cell.LblTeam2.text = data?[indexPath.row].teams?.away?.name
-        if data?[indexPath.row].status?.long == "Finished" || data?[indexPath.row].status?.short == "AOT" || data?[indexPath.row].status?.short?.prefix(2).contains("IN") == true {
+        if data?[indexPath.row].status?.long == "Game Finished"{
             cell.lblRemainingTime.text = data?[indexPath.row].status?.long
-//            cell.lblScore.text = "[ \(data?[indexPath.row].score?.home ?? 0) : \(data?[indexPath.row].score?.away ?? 0) ]"
+            cell.betNowView.isHidden = true
+        }
+        else if data?[indexPath.row].status?.short == "NS" {
+            cell.lblScore.text = data?[indexPath.row].time
+            cell.lblRemainingTime.text = data?[indexPath.row].status?.long
+            cell.betNowView.isHidden = true
         }
         else
         {
+            cell.betNowView.isHidden = false
             cell.lblRemainingTime.text = data?[indexPath.row].time
             cell.lblScore.text = data?[indexPath.row].status?.long
         }
