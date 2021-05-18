@@ -8,7 +8,7 @@
 import UIKit
 
 class BaseballTodayMatchVC: UIViewController {
-
+    
     //MARK:- Properties
     
     @IBOutlet weak var tableView: UITableView!
@@ -16,13 +16,13 @@ class BaseballTodayMatchVC: UIViewController {
     
     var baseBallMatch: BaseBallModel?
     
-
+    
     
     //MARK:- Controller Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         ConfigureCell(tableView: tableView, collectionView: nil, nibName: "FootballCell", reuseIdentifier: "FootballCell", cellType: .tblView)
     }
     
@@ -59,7 +59,14 @@ class BaseballTodayMatchVC: UIViewController {
                 Alert.showMsg(msg: error?.localizedDescription ?? "")
             }
         }
-
+        
+    }
+    
+    @objc func handleBetNoWTapped(sender: UIButton) {
+        let betPopUp = PopUpBet()
+        betPopUp.modalPresentationStyle = .overFullScreen
+        betPopUp.modalTransitionStyle = .crossDissolve
+        self.present(betPopUp, animated: true, completion: nil)
     }
     
     //MARK:- Actions
@@ -83,16 +90,26 @@ extension BaseballTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name
         cell.LblTeam2.text = data?[indexPath.row].teams?.away?.name
-        if data?[indexPath.row].status?.long == "Finished" || data?[indexPath.row].status?.short == "AOT" || data?[indexPath.row].status?.short?.prefix(2).contains("IN") == true {
+        cell.btnBetNow.addTarget(self, action: #selector(handleBetNoWTapped(sender:)), for: .touchUpInside)
+        cell.btnBetNow.tag = indexPath.row
+        if data?[indexPath.row].status?.long == "Finished"{
             cell.lblRemainingTime.text = data?[indexPath.row].status?.long
             cell.lblScore.text = "[ \(data?[indexPath.row].scores?.home?.total ?? 0) : \(data?[indexPath.row].scores?.away?.total ?? 0) ]"
+            cell.betNowView.isHidden = true
+        }
+        else if data?[indexPath.row].status?.short == "AOT" || data?[indexPath.row].status?.long == "Not Started" {
+            cell.betNowView.isHidden = true
+        }
+        else if data?[indexPath.row].status?.short?.prefix(2).contains("IN") == true {
+            cell.betNowView.isHidden = false
         }
         else
         {
             cell.lblRemainingTime.text = data?[indexPath.row].time
             cell.lblScore.text = data?[indexPath.row].status?.long
+            cell.betNowView.isHidden = false
         }
-
+        
         return cell
     }
     

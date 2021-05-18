@@ -60,6 +60,12 @@ class BasketballTodayMatchVC: UIViewController {
 
     }
     
+    @objc func handleBetNoWTapped(sender: UIButton) {
+        let betPopUp = PopUpBet()
+        betPopUp.modalPresentationStyle = .overFullScreen
+        betPopUp.modalTransitionStyle = .crossDissolve
+        self.present(betPopUp, animated: true, completion: nil)
+    }
 }
 
 extension BasketballTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
@@ -77,12 +83,9 @@ extension BasketballTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name
         cell.LblTeam2.text = data?[indexPath.row].teams?.away?.name
-        if data?[indexPath.row].status?.long == "Game Finished"{
-            cell.lblRemainingTime.text = data?[indexPath.row].status?.long
-            cell.betNowView.isHidden = true
-        }
-        else if data?[indexPath.row].status?.short == "NS" {
-            cell.lblScore.text = data?[indexPath.row].time
+        cell.btnBetNow.addTarget(self, action: #selector(handleBetNoWTapped(sender:)), for: .touchUpInside)
+        cell.btnBetNow.tag = indexPath.row
+        if data?[indexPath.row].status?.long == "Game Finished" || data?[indexPath.row].status?.long == "Not Started" || data?[indexPath.row].status?.long == "Game Postponed"{
             cell.lblRemainingTime.text = data?[indexPath.row].status?.long
             cell.betNowView.isHidden = true
         }

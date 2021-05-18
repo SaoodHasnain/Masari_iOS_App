@@ -62,6 +62,13 @@ class HockeyTodayMatchVC: UIViewController {
         
     }
     
+    @objc func handleBetNoWTapped(sender: UIButton) {
+        let betPopUp = PopUpBet()
+        betPopUp.modalPresentationStyle = .overFullScreen
+        betPopUp.modalTransitionStyle = .crossDissolve
+        self.present(betPopUp, animated: true, completion: nil)
+    }
+    
 }
 
 extension HockeyTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
@@ -79,6 +86,8 @@ extension HockeyTodayMatchVC: UITableViewDelegate, UITableViewDataSource {
         cell.team2ImgView.sd_setImage(with: URL(string: data?[indexPath.row].teams?.away?.logo ?? ""), placeholderImage: placeHolderLeage, options: .forceTransition, context: nil)
         cell.LblTeam1.text = data?[indexPath.row].teams?.home?.name
         cell.LblTeam2.text = data?[indexPath.row].teams?.away?.name
+        cell.btnBetNow.addTarget(self, action: #selector(handleBetNoWTapped(sender:)), for: .touchUpInside)
+        cell.btnBetNow.tag = indexPath.row
         if data?[indexPath.row].status?.long == "Finished" || data?[indexPath.row].status?.short == "AOT" || data?[indexPath.row].status?.short?.prefix(2).contains("IN") == true {
             cell.lblRemainingTime.text = data?[indexPath.row].status?.long
             cell.lblScore.text = "[ \(data?[indexPath.row].score?.home ?? 0) : \(data?[indexPath.row].score?.away ?? 0) ]"

@@ -74,6 +74,9 @@
 		FA4DA3A22615AFDC00EA09F9 /* FootballLiveMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4DA3A12615AFDC00EA09F9 /* FootballLiveMatchVC.swift */; };
 		FA84388B265254E200283B13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA84388A265254E200283B13 /* GoogleService-Info.plist */; };
 		FA8438902652609D00283B13 /* BetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84388F2652609D00283B13 /* BetModel.swift */; };
+		FAAA9DD82653C2C100915E5B /* PopUpBet.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAA9DD62653C2C100915E5B /* PopUpBet.xib */; };
+		FAAA9DD92653C2C100915E5B /* PopUpBet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA9DD72653C2C100915E5B /* PopUpBet.swift */; };
+		FAAA9DDE2653CA2100915E5B /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA9DDD2653CA2100915E5B /* DataServices.swift */; };
 		FAB722FD2631610C00D28D32 /* FootballCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB722FB2631610C00D28D32 /* FootballCell.swift */; };
 		FAB722FE2631610C00D28D32 /* FootballCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB722FC2631610C00D28D32 /* FootballCell.xib */; };
 		FAB7230126316B3500D28D32 /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7230026316B3500D28D32 /* LeaguesViewController.swift */; };
@@ -167,6 +170,9 @@
 		FA4DA3A12615AFDC00EA09F9 /* FootballLiveMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballLiveMatchVC.swift; sourceTree = "<group>"; };
 		FA84388A265254E200283B13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA84388F2652609D00283B13 /* BetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetModel.swift; sourceTree = "<group>"; };
+		FAAA9DD62653C2C100915E5B /* PopUpBet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpBet.xib; sourceTree = "<group>"; };
+		FAAA9DD72653C2C100915E5B /* PopUpBet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpBet.swift; sourceTree = "<group>"; };
+		FAAA9DDD2653CA2100915E5B /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		FAB722FB2631610C00D28D32 /* FootballCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballCell.swift; sourceTree = "<group>"; };
 		FAB722FC2631610C00D28D32 /* FootballCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FootballCell.xib; sourceTree = "<group>"; };
 		FAB7230026316B3500D28D32 /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
@@ -383,6 +389,8 @@
 		FA1FA6D1261300700002D203 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA9DD72653C2C100915E5B /* PopUpBet.swift */,
+				FAAA9DD62653C2C100915E5B /* PopUpBet.xib */,
 				FA3C252926130E2600718409 /* UIView.swift */,
 			);
 			path = Views;
@@ -518,6 +526,7 @@
 		FA843893265263E300283B13 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA9DDD2653CA2100915E5B /* DataServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -777,6 +786,7 @@
 				FA3C257426132ACD00718409 /* TTCommons-ThinItalic.ttf in Resources */,
 				FA3C257726132ACD00718409 /* TTCommons-LightItalic.ttf in Resources */,
 				FA84388B265254E200283B13 /* GoogleService-Info.plist in Resources */,
+				FAAA9DD82653C2C100915E5B /* PopUpBet.xib in Resources */,
 				FA1FA6C0261300540002D203 /* Splash.storyboard in Resources */,
 				FA3C257326132ACD00718409 /* TTCommons-Thin.ttf in Resources */,
 				FA1109C8263BEE0800FE0663 /* BaseballCell.xib in Resources */,
@@ -849,6 +859,7 @@
 				FADEB0A4263AB99000F4D99B /* PlayerDetailViewController.swift in Sources */,
 				FAE1ADD626411D7900D35040 /* BasketballManager.swift in Sources */,
 				FA1B1584263FF676008CD9A3 /* HockeyTomorrowMatchVC.swift in Sources */,
+				FAAA9DDE2653CA2100915E5B /* DataServices.swift in Sources */,
 				FA1109C0263BE9B100FE0663 /* BaseballTodayMatchVC.swift in Sources */,
 				FA3C251526130B2300718409 /* Extension.swift in Sources */,
 				FA4DA39F2615AFA900EA09F9 /* FootballUpcomingMatchVC.swift in Sources */,
@@ -860,6 +871,7 @@
 				1813D56A26149B3E004356A4 /* BetsCell.swift in Sources */,
 				1813D5862614B21B004356A4 /* MenuCell.swift in Sources */,
 				FADEB0B2263AD5B600F4D99B /* BaseBallModel.swift in Sources */,
+				FAAA9DD92653C2C100915E5B /* PopUpBet.swift in Sources */,
 				FA1B1580263FF65F008CD9A3 /* HockeyTodayMatchVC.swift in Sources */,
 				FA3C251D26130C5D00718409 /* Rechability.swift in Sources */,
 				FAE1ADF9264156E800D35040 /* HockeyMatchDetailModel.swift in Sources */,
